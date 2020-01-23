@@ -15,12 +15,11 @@ ifneq "$(GITSTATUS)" ""
 endif
 
 $(JOBNAME).pdf: $(DOCNAME).tex meta.tex acronyms.tex
-	xelatex $(DOCNAME)
+	xelatex -jobname=$(JOBNAME) $(DOCNAME)
 	bibtex $(DOCNAME)
-	xelatex $(DOCNAME)
-	bibtex $(DOCNAME)
-	xelatex $(DOCNAME)
-	xelatex $(DOCNAME)
+	xelatex -jobname=$(JOBNAME) $(DOCNAME)
+	xelatex -jobname=$(JOBNAME) $(DOCNAME)
+	xelatex -jobname=$(JOBNAME) $(DOCNAME)
 
 .FORCE:
 
@@ -46,5 +45,4 @@ skipacronyms.txt :
 	touch skipacronyms.txt
 
 clean :
-	latexmk -c
 	rm *.pdf *.nav *.bbl *.xdv *.snm
