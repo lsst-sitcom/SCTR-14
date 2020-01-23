@@ -191,7 +191,7 @@ The personnel involved in the test campaign is shown in the following table.
 \end{minipage}
 \\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{LVV-T1599}
-& {\small Te-Wei Tsai } & {\small  } &
+& {\small Te-Wei Tsai } & {\small Te-Wei Tsai } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small (1) Software Engineer\\
@@ -201,7 +201,7 @@ The personnel involved in the test campaign is shown in the following table.
 \end{minipage}
 \\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{LVV-T1600}
-& {\small Te-Wei Tsai } & {\small  } &
+& {\small Eric Coughlin } & {\small Te-Wei Tsai } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small (1) Software Engineer\\
@@ -236,21 +236,22 @@ The personnel involved in the test campaign is shown in the following table.
  }} & Approved \\\hline
 
   \multicolumn{3}{l}{ Test Cycle {\bf LVV-C114: Camera Hexapod Re-verification
- }} & Not Executed \\\hline
+ }} & In Progress \\\hline
 
   {\bf \footnotesize test case} & {\bf \footnotesize status} & {\bf \footnotesize comment} & {\bf \footnotesize issues} \\\toprule
 
     \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{LVV-T1598}
-    & Not Executed &
+    & Fail &
     \begin{minipage}[]{9cm}
     \smallskip
     
     \medskip
     \end{minipage}
     &
+          \href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}
     \\\hline
     \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{LVV-T1599}
-    & Not Executed &
+    & Initial Pass &
     \begin{minipage}[]{9cm}
     \smallskip
     
@@ -259,13 +260,15 @@ The personnel involved in the test campaign is shown in the following table.
     &
     \\\hline
     \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{LVV-T1600}
-    & Not Executed &
+    & Fail &
     \begin{minipage}[]{9cm}
     \smallskip
     
     \medskip
     \end{minipage}
     &
+          \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
+          \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
     \\\hline
     \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1611}{LVV-T1611}
     & Not Executed &
@@ -283,12 +286,17 @@ The personnel involved in the test campaign is shown in the following table.
 \subsection{Overall Assessment}
 \label{sect:overallassessment}
 
-Not yet available.
+The overall result of this test is: INITIAL PASS.\\[2\baselineskip]
+
 
 \subsection{Recommended Improvements}
 \label{sect:recommendations}
 
-Not yet available.
+To better test this in the future, the Camera Hexapod should always be
+tested starting from the origin to avoid possible hysteresis.
+Furthermore, each test step should be repeated at least three times to
+ensure the absolute accuracy of the Camera Hexapod.~
+
 
 \newpage
 \section{Detailed Test Results}
@@ -301,7 +309,7 @@ Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/
 
 Camera Hexapod Re-verification
 \\
-Status: Not Executed
+Status: In Progress
 
 Re-verify the hardware and software requirements for the Camera rotator
 that were previously tested by MOOG.
@@ -421,7 +429,7 @@ completed:
 \end{itemize}
 
 
-Execution status: {\bf Not Executed }
+Execution status: {\bf Fail }
 
 Final comment:\\
 
@@ -458,11 +466,12 @@ A prompt to enter the password is shown.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We saw the prompt window and was asked for the password.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 2 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -491,11 +500,14 @@ publish through SAL but cannot receive commands.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+After we entered the ``lsst-vnc'', we can log in the system. The initial
+state is Offline State/PublishOnly. We saw the green light of DDS
+connected.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 3 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -522,11 +534,12 @@ eGUI.\\[2\baselineskip]
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the OfflineState/AvailableState substate.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 4 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -550,11 +563,12 @@ The State Triggers dialogue box shown below becomes visible.\\
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 5 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -577,11 +591,12 @@ display box at the top of the Main says Standby State.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 6 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -605,11 +620,12 @@ previous DDS start command.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Disabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 7 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -632,11 +648,12 @@ motor drives are enabled and and motion can be commanded.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Enabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 8 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -664,11 +681,19 @@ The system transitions back to the OfflineState/PublishOnly substate.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+For the safety interlock, press the E-top first, click the switch button
+of release interlock 2, release the E-stop, click the switch button of
+reset interlock. By doing this, we could put/ release the safety
+interlock. No clearError in software side is
+needed.\\[2\baselineskip]When we opened the hexapod GUI, there was the
+simulink error after hitting the systemReady command and entered the
+Fault state. We can use the clearError to leave the Fault state and do
+the state transitions.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 9 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -698,11 +723,25 @@ limits or limit switches are tripped.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Measurements for the positioning could not be completed due to a failure
+in drive \#3.\\
+1) The tilt angle, tilt offset distance and pivot distance are all OK,
+but once reached, the X and Zdon't seem to be able to reach position to
+within \textasciitilde{}2mm\\
+2) Laser tracker seems to contradict MOOG's statement about corners
+representing different combinations of the maximum simultaneous range
+requirements for X and Z
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Issues found executing this step:  \\
+ & \begin{minipage}[t]{13cm}{\footnotesize
+\href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}~~Camera Hexapod Drive \#3 Failure
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+ & Status: \textbf{ Fail } \\ \hline
 
 10 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -730,11 +769,18 @@ The center of rotation is able to be moved.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+\emph{COR at 1.938m from the rotator to camera interface}\\
+Laser tracker-determined COR: 1930+/-8.2{[}mm{]}\\
+\emph{COR at the rotator to camera interface}\\
+Laser tracker-determined COR: set value COR 33.75{[}mm{]}; SA measured =
+923+/-1 {[}mm{]}\\
+Complies with requirement with caveat that there is an offset at the
+rotatorsurface: 820.4mm
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 11 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -757,11 +803,12 @@ erroneous geometry are minimal)
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Based on rest of tests
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 12 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -790,11 +837,19 @@ in the Acceptance Test Procedure.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+1. 7.57428275,0,0,0,0,0\\
+2. 5.3578403, 5.37473926,0,0,0,0\\
+3. 0,7.58852237,0,0,0,0\\
+4. -5.34249993, 5.33297113,0,0,0,0\\
+5. -7.57839578,0,0,0,0,0\\
+6. -5.34249993, -5.38597352,0,0,0,0\\
+7. 0;-7.55189491,0,0,0,0\\
+8. 5.3578403; -5.34205358;0;0;0;0
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 13 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -823,11 +878,14 @@ in the Acceptance Test Procedure.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+1. 0;0;8.72487391;0;0;0\\
+2. 0,0, -8.710510168,0,0,0\\
+3. 0;0;8.70619302;0;0;0
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 14 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -857,11 +915,21 @@ listed in the Acceptance Test Procedure.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command (0,0,0,0.24 deg,0,0): (0,0,0,0.2429,0,0)\\
+Command (0,0,0,0.170deg,0.170deg,0): (0,0,0,0.1732,0.1707,0)\\
+Command (0,0,0,0,0.24deg,0): (0,0,0,0.2402,0,0)\\
+Command (0,0,0,-0.170deg,0.170deg,0): (0,0,0,-0.1689,0.1714,0)\\
+Command (0,0,0,-0.24deg,0,0): (0,0,0,-0.2414,0,0)\\
+Command (0,0,0,-0.170deg,-0.170deg,0): (0,0,0,-0.169,-0.1703,0)\\
+Command (0,0,0,0,-0.24deg,0): (0,0,0,0,-0.2431,0)\\
+Command (0,0,0,0.170deg,-0.170deg,0):
+(0,0,0,0.173,-0.1714,0)\\[2\baselineskip]Measurements error
+STDEV\textless{}0.00205Deg
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 15 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -890,11 +958,14 @@ in the Acceptance Test Procedure.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command (0,0,0,0,0,0.1deg): (0,0,0,0,0,0.0999)\\
+Command (0,0,0,0,0,-0.1deg): (0,0,0,0,0,-0.09955)\\[2\baselineskip]Error
+\textless{} 0.015Deg
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 16 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -922,11 +993,12 @@ The accuracy of the hexapod is good enough to be consistently repeated.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Shall be done in test cases 12-15.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 17 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -956,6 +1028,12 @@ and RZ requirements.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+1. Test to set the position (5mm, 0, 5mm, 0.17deg, 0, -0.17deg).\\
+2. Test to set the position (0, -5mm, -5mm, 0.17deg, 0,
+0.17deg).\\[2\baselineskip]Note: Always to move the hexapod from the
+origin to avoid the possible hysteresis. The default pivot and origin
+shall be recorded.\\
+\emph{(Eric to test with SAL)}
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
@@ -983,6 +1061,8 @@ meet the heat dissipation requirement.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+As this was originally tested with a surrogate mass, this step was left
+unexecuted and will be tested in the future with ComCam (with load).~
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
@@ -1099,7 +1179,7 @@ completed:
 \end{itemize}
 
 
-Execution status: {\bf Not Executed }
+Execution status: {\bf Initial Pass }
 
 Final comment:\\
 
@@ -1136,11 +1216,12 @@ A prompt to enter the password is shown.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We saw the prompt window and asked for the password.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 2 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1169,11 +1250,14 @@ publish through SAL but cannot receive commands.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+After we entered the ``lsst-vnc'', we can log in the system. The initial
+state is Offline State/PublishOnly. We saw the green light of DDS
+connected.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 3 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1200,11 +1284,12 @@ eGUI.\\[2\baselineskip]
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the OfflineState/AvailableState substate.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 4 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1228,11 +1313,12 @@ The State Triggers dialogue box shown below becomes visible.\\
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 5 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1255,11 +1341,12 @@ display box at the top of the Main says Standby State.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 6 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1283,11 +1370,12 @@ previous DDS start command.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Duplication of the test case 6 in LVV-T1598.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 7 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1310,11 +1398,12 @@ motor drives are enabled and and motion can be commanded.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Disabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 8 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1342,11 +1431,19 @@ The system transitions back to the OfflineState/PublishOnly substate.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+For the safety interlock, press the E-top first, click the switch button
+of release interlock 2, release the E-stop, click the switch button of
+reset interlock. By doing this, we could put/ release the safety
+interlock. No clearError in software side is
+needed.\\[2\baselineskip]When we opened the hexapod GUI, there was the
+simulink error after hitting the systemReady command and entered the
+Fault state. We can use the clearError to leave the Fault state and do
+the state transitions.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 9 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1372,11 +1469,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (0um, 0um, 200um, 0 deg, 0 deg, 0
+deg) only and the hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 10 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1399,11 +1498,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (2000um, -3500um, 200um, .01 deg,
+-.05deg, .002deg) only and the hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 11 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1427,11 +1528,15 @@ telemetry screen.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We saw the movement of hexapod with position (2000um, -3500um, 200um,
+.01 deg, -.05deg, .002deg) after hitting the move command. The final
+position is (1999um, -3500um, 200um, .01 deg, -.05deg, .002deg) on GUI.
+We saw a ``1 um'' difference in x position.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 12 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1459,11 +1564,18 @@ The actuator positions do not change, but the hexapod position is
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The default pivot position is (0, 0, -2758400um). Change the pivot to
+(0, 0, 0) in the offline state (it can not be changed in the enabled
+state). The hexapod position is (-408um, -3982um, 199um, 0.01deg,
+-0.05deg, 0.002deg). The x position differs by 1 um from the case
+11.\\[2\baselineskip]PS. The pivot value can only be changed in the
+offline state not enabled/stationary state. There will be a prompt
+window to complain the wrong state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 13 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1485,11 +1597,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (2000um, -3500um, 200um, .01 deg,
+-.05deg, .002deg) only and the hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 14 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1512,11 +1626,13 @@ for the new pivot point.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The hexapod moved to the position of (2000um, -3500um, 200um, .01 deg,
+-.05deg, .002deg) based on GUI with the new pivot point.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 15 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1542,11 +1658,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (500um, 800um, 200um, 0 deg, 0 deg, 0
+deg) only and the hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 16 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1568,11 +1686,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the offset command of (0um, 0um, 2000um, 0 deg, 0 deg, 0 deg)
+only and the hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 17 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1595,11 +1715,14 @@ motion complete lights on the telemetry screen.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Put the hexapod to origin. Do the case 15 and 16 and move. The hexapod
+moves to (1um, 0, 2000um, 0, 0, 0). We saw the offset command will
+override the positionSet command from case 15.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 18 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1623,11 +1746,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (0, 0, 0, 0.1deg, 0, 0) only and the
+hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 19 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1649,11 +1774,15 @@ The hexapod moves to the commanded position of (0um, 0um, 0um, 0.1deg,
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+1. The hexapod moved to (0 , -2um, 0, 0.1deg, 0, 0) based on GUI from
+the (1um, 0, 2000um, 0, 0, 0) in case 17.\\
+2. The hexapod moved to (0 , 1um, 0, 0.1deg, 0, 0) based on GUI from the
+origin (0, -1um, 0, 0, 0, 0).
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 20 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1676,11 +1805,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (0, 0, 0, 0, 0.1deg, 0) only and the
+hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 21 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1702,11 +1833,13 @@ The hexapod moves to the commanded position of (0um, 0um, 0um, 0deg,
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The hexapod moved to (0 , -1um, 0, 0, 0.1deg, 0) based on GUI from the
+origin (0, -1um, 0, 0, 0, 0).
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 22 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1729,11 +1862,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (0, 0, 0, 0.1deg, 0.1deg, 0) only and
+the hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 23 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1755,11 +1890,13 @@ The hexapod moves to the commanded position of (0um, 0um, 0um, 0.1deg,
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The hexapod moved to (0 , 0, 0, 0.1deg, 0.1deg, 0) based on GUI from the
+origin (0, 0, 0, 0, 0, 0).
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 24 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1784,11 +1921,13 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We sent the positionSet command of (0, 0, 5000um, 0, 0, 0) only and the
+hexapod did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 25 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1809,11 +1948,13 @@ The hexapod starts to move to the commanded position.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The hexapod was moving to to (0 , 0, ~5000um, 0, 0, 0) based on GUI from
+the origin (1um, 0, 0, 0, 0, 0).
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 26 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1835,11 +1976,12 @@ position.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The hexapod stopped at the position of (0, 0, 2300um , 0, 0, 0).
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 27 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1863,11 +2005,12 @@ The rotator starts in the Offline/PublishOnly state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+It is the Offline/PublishOnly state at startup.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 28 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1888,11 +2031,12 @@ The system transitions into the Offline/Available substate.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Offline/Available substate.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 29 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1913,11 +2057,12 @@ The system transitions from Offline/Available to Standby state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 30 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1938,11 +2083,12 @@ The system transitions from Standby to Disabled state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Disabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 31 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1963,11 +2109,12 @@ The system transitions from Disabled to Enabled state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Enabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 32 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -1988,11 +2135,12 @@ The system transitions from Enabled to Disabled state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Disabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 33 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2013,11 +2161,12 @@ The system transitions from Disabled state to Standby state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 34 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2038,11 +2187,12 @@ The system transitions from Standby state to Offline state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Offline state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 35 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2063,11 +2213,12 @@ The system transitions to Fault state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The system transited to Fault state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 36 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2088,11 +2239,13 @@ The system transitions from Fault state to Offline state
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We did not send the clearError. We used the mechanical switches to
+remove the interlock error. This is considered to be done.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 37 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2373,7 +2526,7 @@ completed:
 \end{itemize}
 
 
-Execution status: {\bf Not Executed }
+Execution status: {\bf Fail }
 
 Final comment:\\
 
@@ -2386,7 +2539,7 @@ Detailed steps results:
 1 & Description \\
  & \begin{minipage}[t]{15cm}
 {\footnotesize
-\textbf{STARTING THE EUI}\\[2\baselineskip]Double click the Rotator GUI
+\textbf{STARTING THE EUI}\\[2\baselineskip]Double click the Hexapod GUI
 Viewer desktop icon on the computer.
 
 \begin{itemize}
@@ -2410,11 +2563,12 @@ A prompt to enter a password is shown.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We saw the prompt window and asked for the password.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 2 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2425,7 +2579,7 @@ Enter the password ``lsst-vnc''
 \tightlist
 \item
   If the EUI isn't automatically up and running when the VNC opens,
-  double click on the Rotator-eGUI icon on the VNC viewer
+  double click on the Hexapod-eGUI icon on the VNC viewer
 \end{itemize}
 
 \medskip }
@@ -2443,11 +2597,14 @@ publish through SAL but cannot receive commands.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+After we entered the ``lsst-vnc'', we can log in the system. The initial
+state is Offline State/PublishOnly. We saw the green light of DDS
+connected on GUI and the event of commandableByDDS from summit EFD.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 3 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2474,11 +2631,12 @@ OfflineState/AvailableState substate.\\[2\baselineskip]
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the OfflineState/AvailableState substate.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 4 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2506,11 +2664,12 @@ The system is capable of receiving/responding to DDS commands.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We can do the DDS control.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 5 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2534,11 +2693,12 @@ receiving/responding to DDS commands.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Standby state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 6 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2563,11 +2723,12 @@ invalid or out of range, the system will transition into a Fault State
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Disabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 7 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2592,11 +2753,12 @@ capable of receiving/responding to DDS commands.\\[2\baselineskip]
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+We transited the system to the Enabled state.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 8 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2624,11 +2786,12 @@ is not capable of receiving/responding to DDS commands. (Go back to Step
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Cleared error and transitioned back to OfflineState/Available
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 9 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2654,11 +2817,12 @@ The hexapod does not move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 10 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2681,11 +2845,12 @@ The hexapod does not move
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 11 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2713,11 +2878,12 @@ Send a move command.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Moved to 1999,-3500,200,0.01,0.05,0.002)
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 12 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2745,11 +2911,13 @@ Record the corresponding DDS events that were generated.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Deviation: Russell will need to modify the XML as the vendor's version
+has no Boolean field for inPosition unlike for the Camera Rotator.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Pass w/ Deviation } \\ \hline
 
 13 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2774,11 +2942,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Does not move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 14 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2799,11 +2968,12 @@ The hexapod begins to move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Begins to move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 15 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2828,11 +2998,12 @@ Before the hexapod completes its movement, send a stop command.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Hexapod stopped
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 16 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2860,11 +3031,12 @@ Record the corresponding DDS events that were generated.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+It works.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 17 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2889,11 +3061,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Does not move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 18 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2915,11 +3088,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Does not move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 19 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2941,11 +3115,13 @@ The hexapod moves to a different position than (0um, 0um, 800um, 0deg,
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Hexapod moves to a different position(1699,199,920,0.03,-0.02,0.016)
+(0,0,2970,0,0,0)
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 20 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -2977,11 +3153,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Did not move.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 21 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3007,7 +3184,7 @@ The hexapod doesn't move.
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 22 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3034,11 +3211,12 @@ Send a move command.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Works.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 23 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3069,11 +3247,13 @@ Record the corresponding DDS events that were generated.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Deviation: Russell will need to modify the XML as the vendor's version
+has no Boolean field for inPosition unlike for the Camera Rotator.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Pass w/ Deviation } \\ \hline
 
 24 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3105,11 +3285,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Original pivot is 0, 0, -2.7584E+6
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 25 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3130,11 +3311,12 @@ The actuator positions do not change but the hexapod position changes.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Position data became -408, -3952, 199, 0.0100 -0.05 0.002
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 26 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3165,11 +3347,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Does not move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 27 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3191,11 +3374,12 @@ change position to account for the new pivot point.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Moves to 2000, -3500, 200, 0.01, -0.05 0.002
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 28 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3221,11 +3405,12 @@ The command is rejected for being outside acceptable limits.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command rejected for x being outside limits
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 29 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3247,11 +3432,12 @@ The command is accepted.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command Accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 30 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3273,11 +3459,18 @@ The command is rejected for being outside of range limits
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command is accepted. Jira ticket filed~
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Issues found executing this step:  \\
+ & \begin{minipage}[t]{13cm}{\footnotesize
+\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}~~Check position limits for Hexapod move and offset commands
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+ & Status: \textbf{ Fail } \\ \hline
 
 31 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3299,11 +3492,18 @@ The command is rejected for being outside of range limits.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command is accepted.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Issues found executing this step:  \\
+ & \begin{minipage}[t]{13cm}{\footnotesize
+\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}~~Check position limits for Hexapod move and offset commands
+
+\medskip }
+\end{minipage} \\ \cdashline{2-2}
+ & Status: \textbf{ Fail } \\ \hline
 
 32 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3325,11 +3525,12 @@ The command is accepted.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command accepted.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 33 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3350,11 +3551,12 @@ The previously accepted command is executed.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Move completed to correct position
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 34 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3375,11 +3577,12 @@ The change is reflected in the settingsApplied event and the EUI.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Change reflected in EUI, still checking EFD.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ In Progress } \\ \hline
 
 35 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3406,11 +3609,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+The Hexapod does not move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 36 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3431,11 +3635,12 @@ The move takes approximately 9 seconds to complete.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Hexapod movement took approximately 9 seconds.~
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 37 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3456,11 +3661,12 @@ Send a configureAcceleration command of 1000.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command rejected
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 38 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3481,11 +3687,12 @@ The command is accepted.~
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 39 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3507,11 +3714,12 @@ The hexapod doesn't move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Hexapod does not move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 40 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3533,11 +3741,12 @@ the reduced acceleration value.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Hexapod moved in approximately~ 13 seconds.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 41 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3559,11 +3768,12 @@ The command is accepted.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 42 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3584,11 +3794,12 @@ The change is reflected in the settingsApplied event and the EUI.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Changes were evident in EUI, still need to find EFD.
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ In Progress } \\ \hline
 
 43 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3614,11 +3825,12 @@ This command is rejected for being outside of acceptable limits.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command rejected
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 44 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3640,11 +3852,12 @@ This command is accepted.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 45 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3666,11 +3879,12 @@ The command is accepted
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 46 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3691,11 +3905,12 @@ It takes approximately 20 seconds to complete the commanded move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Approximately 20 seconds taken to move
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 47 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3717,11 +3932,12 @@ This command is accepted.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 48 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3743,11 +3959,12 @@ This command is accepted
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command accepted
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 49 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3768,11 +3985,12 @@ It takes approximately 40 seconds to complete the commanded move.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Move completed in 40 seconds
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 50 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3793,11 +4011,12 @@ The change is reflected in the settingsApplied event and the EUI.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Changes reflected in EUI, still determining EFD
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ In Progress } \\ \hline
 
 51 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3824,7 +4043,7 @@ There is no change and command is rejected.
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 52 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3845,11 +4064,12 @@ The system enters the Standby state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+System enters standby state
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 53 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3870,11 +4090,12 @@ There is no change and command is rejected.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command rejected
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 54 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3895,11 +4116,12 @@ The system transitions into the Offline/Available state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Transitions to Offline/Available
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 55 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3920,11 +4142,12 @@ The system transitions into the Disabled state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Transitions to disabled state
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 56 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3946,11 +4169,12 @@ There is no change and the command is rejected.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command rejected
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 57 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3971,11 +4195,12 @@ The system transitions into the Standby state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Transitions to standby state
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 58 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -3996,11 +4221,12 @@ The system transitions into the Enabled/Stationary state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Transitions to enabled state
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 59 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -4023,11 +4249,12 @@ There is no change and command is rejected.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Command rejected
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 60 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -4048,11 +4275,12 @@ The system transitions into Disabled state.
 
  & Actual Result \\
  & \begin{minipage}[t]{15cm}{\footnotesize
+Transitioned to disabled state
 
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 61 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -4077,7 +4305,7 @@ There is no change and command is rejected.
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 62 & Description \\
  & \begin{minipage}[t]{15cm}
@@ -4102,7 +4330,7 @@ The system transitions into the Offline/PublishOnly state.
 \medskip }
 \end{minipage} \\ \cdashline{2-2}
 
- & Status: \textbf{ Not Executed } \\ \hline
+ & Status: \textbf{ Initial Pass } \\ \hline
 
 63 & Description \\
  & \begin{minipage}[t]{15cm}
