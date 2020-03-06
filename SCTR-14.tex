@@ -107,13 +107,12 @@ The current status of test plan LVV-P63 in Jira is \textbf{ Approved }.
 
 \subsection{Verification Environment}
 \label{sect:hwconf}
-   The Camera Hexapod will be verified in a climate controlled environment
+  The Camera Hexapod will be verified in a climate controlled environment
 on the 3rd floor of the Summit Facility integrated with the Camera Cable
 Wrap on the Camera Cart.
 
-
   \subsection{Entry Criteria}
-   In order to test the Camera Hexapod functionality, the following
+  In order to test the Camera Hexapod functionality, the following
 criteria must be met first:
 
 \begin{itemize}
@@ -132,9 +131,8 @@ criteria must be met first:
   The EFD must be set up to be able to store events and telemetry data
 \end{itemize}
 
-
   \subsection{Exit Criteria}
-   In order for this event to be considered complete, the following
+  In order for this event to be considered complete, the following
 criteria must be met:
 
 \begin{itemize}
@@ -161,10 +159,8 @@ criteria must be met:
   project
 \end{itemize}
 
-
   \subsection{PMCS Activity}
-   See Epics in Traceability Tab
-
+  See Epics in Traceability Tab
 
 \newpage
 \section{Personnel}
@@ -194,9 +190,8 @@ The personnel involved in the test campaign is shown in the following table.
 & {\small Te-Wei Tsai } & {\small Te-Wei Tsai } &
 \begin{minipage}[]{6cm}
 \smallskip
-{\small  (1) Software Engineer\\
-(1) Hardware Engineer
- }
+{\small (1) Software Engineer\\
+(1) Hardware Engineer }
 \medskip
 \end{minipage}
 \\ \hline
@@ -204,9 +199,8 @@ The personnel involved in the test campaign is shown in the following table.
 & {\small Eric Coughlin } & {\small Te-Wei Tsai } &
 \begin{minipage}[]{6cm}
 \smallskip
-{\small  (1) Software Engineer\\
-(1) Hardware Engineer
- }
+{\small (1) Software Engineer\\
+(1) Hardware Engineer }
 \medskip
 \end{minipage}
 \\ \hline
@@ -214,9 +208,8 @@ The personnel involved in the test campaign is shown in the following table.
 & {\small Te-Wei Tsai } & {\small  } &
 \begin{minipage}[]{6cm}
 \smallskip
-{\small  (1) Software Engineer\\
-(1) Hardware Engineer
- }
+{\small (1) Software Engineer\\
+(1) Hardware Engineer }
 \medskip
 \end{minipage}
 \\ \hline
@@ -232,11 +225,9 @@ The personnel involved in the test campaign is shown in the following table.
 
 \begin{longtable}{p{2cm}p{2.5cm}p{9cm}p{2.5cm}}
 \toprule
-\multicolumn{3}{l}{ Test Plan {\bf LVV-P63:  Camera Hexapod Functional Re-verification
- }} & Approved \\\hline
+\multicolumn{3}{p{13.5cm}}{ Test Plan {\bf LVV-P63: Camera Hexapod Functional Re-verification }} & Approved \\\hline
 
-  \multicolumn{3}{l}{ Test Cycle {\bf LVV-C114:  Camera Hexapod Re-verification
- }} & In Progress \\\hline
+  \multicolumn{3}{p{13.5cm}}{ Test Cycle {\bf LVV-C114: Camera Hexapod Re-verification }} & In Progress \\\hline
 
   {\bf \footnotesize test case} & {\bf \footnotesize status} & {\bf \footnotesize comment} & {\bf \footnotesize issues} \\\toprule
 
@@ -286,17 +277,15 @@ The personnel involved in the test campaign is shown in the following table.
 \subsection{Overall Assessment}
 \label{sect:overallassessment}
 
- The overall result of this test is: INITIAL PASS.\\[2\baselineskip]
-
+The overall result of this test is: INITIAL PASS.\\[2\baselineskip]
 
 \subsection{Recommended Improvements}
 \label{sect:recommendations}
 
- To better test this in the future, the Camera Hexapod should always be
+To better test this in the future, the Camera Hexapod should always be
 tested starting from the origin to avoid possible hysteresis.
 Furthermore, each test step should be repeated at least three times to
 ensure the absolute accuracy of the Camera Hexapod.~
-
 
 \newpage
 \section{Detailed Test Results}
@@ -304,19 +293,16 @@ ensure the absolute accuracy of the Camera Hexapod.~
 
 \subsection{Test Cycle LVV-C114 }
 
-Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C114}{ Camera Hexapod Re-verification
-}} in Jira.
+Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C114}{Camera Hexapod Re-verification}} in Jira.
 
- Camera Hexapod Re-verification
-\\
+Camera Hexapod Re-verification\\
 Status: In Progress
 
- Re-verify the hardware and software requirements for the Camera rotator
+Re-verify the hardware and software requirements for the Camera rotator
 that were previously tested by MOOG.
 
-
 \subsubsection{Software Version/Baseline}
- \begin{enumerate}
+\begin{enumerate}
 \tightlist
 \item
   Camera Hexapod Control Software with SAL v4.0
@@ -324,20 +310,17 @@ that were previously tested by MOOG.
   EFD with SAL v4.0
 \end{enumerate}
 
-
 \subsubsection{Configuration}
- No varying configuration between test cycles.
-
+No varying configuration between test cycles.
 
 \subsubsection{Test Cases in LVV-C114 Test Cycle}
 
-\paragraph{Test Case LVV-T1598 -  Camera Hexapod Hardware Functional Re-verification
- }\mbox{}\\
+\paragraph{Test Case LVV-T1598 - Camera Hexapod Hardware Functional Re-verification }\mbox{}\\
 
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{\textit{ LVV-T1598 } }
 test case in Jira.
 
- The objective of this test case is to re-verify the functional
+The objective of this test case is to re-verify the functional
 requirements of the camera hexapod's hardware, after shipment from the
 vendors facility to the Summit, as defined in \citeds{LTS-206}. This test case
 will only exercise the functionality that was executed previously and
@@ -369,9 +352,8 @@ requirements granted to the vendor by LSST.\\[2\baselineskip]See the
 attached \emph{LSST Rotator Hexapod's Manual} for more information on
 how to operate the hexapod.
 
-
 \textbf{ Preconditions}:\\
- Prior to the execution of this test case to re-verify the Camera Hexapod
+Prior to the execution of this test case to re-verify the Camera Hexapod
 hardware functional requirements, the following Summit tasks must be
 completed:
 
@@ -427,7 +409,6 @@ completed:
     \url{https://jira.lsstcorp.org/browse/SUMMIT-3294}
   \end{itemize}
 \end{itemize}
-
 
 Execution status: {\bf Fail }
 
@@ -1094,13 +1075,12 @@ unexecuted and will be tested in the future with ComCam (with load).~
 
 \end{longtable}
 
-\paragraph{Test Case LVV-T1599 -  Camera Hexapod Software Functional Re-verification
- }\mbox{}\\
+\paragraph{Test Case LVV-T1599 - Camera Hexapod Software Functional Re-verification }\mbox{}\\
 
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{\textit{ LVV-T1599 } }
 test case in Jira.
 
- The objective of this test case is to re-verify the functional
+The objective of this test case is to re-verify the functional
 requirements of the camera hexapod's software, after shipment of the
 hardware from the vendor's facility to the Summit, as defined in \citeds{LTS-206}
 and \citeds{LTS-160}. This test case will only exercise the functionality that
@@ -1142,9 +1122,8 @@ performed previously and includes changes noted by the
 vendor.\\[2\baselineskip]See the attached \emph{LSST Hexapod Operator's
 Manual} for more information on how to operate the hexapod.
 
-
 \textbf{ Preconditions}:\\
- Prior to the execution of this test case to re-verify the Camera Hexapod
+Prior to the execution of this test case to re-verify the Camera Hexapod
 hardware functional requirements, the following Summit tasks must be
 completed:
 
@@ -1200,7 +1179,6 @@ completed:
     \url{https://jira.lsstcorp.org/browse/SUMMIT-3294}
   \end{itemize}
 \end{itemize}
-
 
 Execution status: {\bf Initial Pass }
 
@@ -2442,13 +2420,12 @@ state.
 
 \end{longtable}
 
-\paragraph{Test Case LVV-T1600 -  Integration of Camera Hexapod with SAL 4.0 (LSST)
- }\mbox{}\\
+\paragraph{Test Case LVV-T1600 - Integration of Camera Hexapod with SAL 4.0 (LSST) }\mbox{}\\
 
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{\textit{ LVV-T1600 } }
 test case in Jira.
 
- The objective of this test case is to re-verify the functional
+The objective of this test case is to re-verify the functional
 requirements of the camera hexapod's software, after shipment of the
 hardware from the vendor's facility to the Summit, as defined in \citeds{LTS-206}
 and \citeds{LTS-160}. This test case will only exercise the functionality that
@@ -2489,9 +2466,8 @@ can be found linked in the Traceability tab.\\[2\baselineskip]See the
 attached \emph{LSST Rotator Hexapod's Manual} for more information on
 how to operate the hexapod.
 
-
 \textbf{ Preconditions}:\\
- Prior to the execution of this test case to re-verify the Camera Hexapod
+Prior to the execution of this test case to re-verify the Camera Hexapod
 hardware functional requirements, the following Summit tasks must be
 completed:
 
@@ -2547,7 +2523,6 @@ completed:
     \url{https://jira.lsstcorp.org/browse/SUMMIT-3294}
   \end{itemize}
 \end{itemize}
-
 
 Execution status: {\bf Fail }
 
@@ -4520,13 +4495,12 @@ state.
 
 \end{longtable}
 
-\paragraph{Test Case LVV-T1611 -  Integration of Camera Hexapod with SAL 4.0 (MOOG)
- }\mbox{}\\
+\paragraph{Test Case LVV-T1611 - Integration of Camera Hexapod with SAL 4.0 (MOOG) }\mbox{}\\
 
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1611}{\textit{ LVV-T1611 } }
 test case in Jira.
 
- {\textless{}\textless{}This Test Case is only to be executed in the
+{\textless{}\textless{}This Test Case is only to be executed in the
 event that Russell's code does not work\textgreater{}\textgreater{}}\\
 The objective of this test case is to re-verify the functional
 requirements of the camera hexapod's software, after shipment of the
@@ -4572,9 +4546,8 @@ configureTemperatureRawLUT commands.\\[2\baselineskip]See the attached
 \emph{LSST Rotator Hexapod's Manual} for more information on how to
 operate the hexapod.
 
-
 \textbf{ Preconditions}:\\
- Prior to the execution of this test case to re-verify the Camera Hexapod
+Prior to the execution of this test case to re-verify the Camera Hexapod
 hardware functional requirements, the following Summit tasks must be
 completed:
 
@@ -4630,7 +4603,6 @@ completed:
     \url{https://jira.lsstcorp.org/browse/SUMMIT-3294}
   \end{itemize}
 \end{itemize}
-
 
 Execution status: {\bf Not Executed }
 
