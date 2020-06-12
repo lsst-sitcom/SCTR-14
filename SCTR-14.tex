@@ -3,9 +3,14 @@
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}
 \usepackage{arydshln}
+\usepackage{attachfile}
+\usepackage{array}
+
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
 
 \input meta.tex
 
+\newcommand{\attachmentsUrl}{https://github.com/\gitorg/\lsstDocType-\lsstDocNum/blob/\gitref/attachments}
 \providecommand{\tightlist}{
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 
@@ -13,23 +18,22 @@
 
 \begin{document}
 
-\def\milestoneName{Camera Hexapod Functional Re-Verification}
+\def\milestoneName{Camera Hexapod Functional Re-verification}
 \def\milestoneId{LVV-P63}
 \def\product{SIT-COM Integration}
 
 \setDocCompact{true}
 
-\title{ LVV-P63 Camera Hexapod Functional Re-Verification Test Plan and Report}
+\title{LVV-P63: Camera Hexapod Functional Re-verification Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
 \date{\vcsdate}
-\setDocUpstreamLocation{\url{https://github.com/lsst/lsst-texmf/examples}}
 \author{ Austin Roberts }
 
-\input history_and_info.tex
+\input{history_and_info.tex}
 
 
 \setDocAbstract{
-This is the test plan and report for LVV-P63 (Camera Hexapod Functional Re-Verification),
+This is the test plan and report for LVV-P63 (Camera Hexapod Functional Re-verification),
 an LSST milestone pertaining to the System Engineering Subsystem.
 }
 
@@ -67,7 +71,6 @@ verified during the test campaign by the vendor at the vendors facility
 and accepted by LSST during the Factory Acceptance Test review.
 
 
-
 \subsection{System Overview}
 \label{sect:systemoverview}
 
@@ -78,28 +81,35 @@ function of aligning the camera with the optical path of the telescope.
 \subsection{Document Overview}
 \label{sect:docoverview}
 
-This document was generated from Jira, obtaining the relevant information from the 
-\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testPlan/LVV-P63}{LVV-P63}
+This document was generated from Jira, obtaining the relevant information from the
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P63}{LVV-P63}
 ~Jira Test Plan and related Test Cycles (
-  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCycle/LVV-C114}{LVV-C114}
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C114}{LVV-C114}
 ).
 
-Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}), the applicable documentation, and explains how this document is organized.
-Section \ref{sect:configuration}  describes the configuration used for this test.
-Section \ref{sect:personnel} describes the necessary roles and lists the individuals assigned to them.
-%Section \ref{sect:plannedtestactivities} provides the list of planned test cycles and test cases, including all relevant information that fully describes the test campaign.
 
-Section \ref{sect:overview} provides a summary of the test results, including an overview in Table \ref{table:summary}, an overall assessment statement and suggestions for possible improvements.
+Section \ref{sect:intro} provides an overview of the test campaign, the system under test (\product{}),
+the applicable documentation, and explains how this document is organized.
+Section \ref{sect:testplan} provides additional information about the test plan, like for example the configuration
+used for this test or related documentation.
+Section \ref{sect:personnel} describes the necessary roles and lists the individuals assigned to them.
+
+Section \ref{sect:overview} provides a summary of the test results, including an overview in Table \ref{table:summary},
+an overall assessment statement and suggestions for possible improvements.
 Section \ref{sect:detailedtestresults} provides detailed results for each step in each test case.
 
-The current status of test plan LVV-P63 in Jira is \textbf{ Approved }.
+The current status of test plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P63}{LVV-P63} in Jira is \textbf{ Approved }.
 
 \subsection{References}
 \label{sect:references}
 \renewcommand{\refname}{}
 \bibliography{lsst,refs,books,refs_ads,local}
-\section{Test Configuration}
-\label{sect:configuration}
+
+
+\newpage
+\section{Test Plan Details}
+\label{sect:testplan}
+
 
 \subsection{Data Collection}
 
@@ -159,8 +169,34 @@ criteria must be met:
   project
 \end{itemize}
 
-  \subsection{PMCS Activity}
-  See Epics in Traceability Tab
+
+\subsection{Related Documentation}
+
+The documentation related to this test campaign should be provided in the following DocuShare Collection
+(as per Verification Artifacts in Jira test plan LVV-P63).
+
+\begin{itemize}
+\item DocuShare Collection Not Specified
+\end{itemize}
+
+\begin{longtable}{rp{10cm}l}
+\multicolumn{3}{c}{Jira Attachments} \\ \hline
+LVV-C114 & LSSTHexapods-RotatorAcceptanceTestProcedure\_re-verification\_hardware.v.2.pdf & \attachfile{attachments/LSSTHexapods-RotatorAcceptanceTestProcedure_re-verification_hardware.v.2.pdf}\\ \hline
+LVV-C114 & LSSTHexapods-RotatorAcceptanceTest\_re-verif.\_(hardwarereport).v.2.pdf & \attachfile{attachments/LSSTHexapods-RotatorAcceptanceTest_re-verif._(hardwarereport).v.2.pdf}\\ \hline
+LVV-C114 & Hex.xyzRxRy.3.3.1.v.2.xlsx & \attachfile{attachments/Hex.xyzRxRy.3.3.1.v.2.xlsx}\\ \hline
+      \end{longtable}
+ 
+All documents provided as attachments in Jira are downloaded to Github and linked here for convenience.
+However, since they are not properly versioned, they should be considered informal and therefore
+not be part of the verification baseline.
+
+
+\subsection{PMCS Activity}
+
+Primavera milestones related to the test campaign.
+
+See Epics in Traceability Tab
+
 
 \newpage
 \section{Personnel}
@@ -168,16 +204,16 @@ criteria must be met:
 
 The personnel involved in the test campaign is shown in the following table.
 
+{\small
 \begin{longtable}{p{3cm}p{3cm}p{3cm}p{6cm}}
 \hline
-\multicolumn{2}{r}{Test Plan (LVV-P63) owner:} &
+\multicolumn{2}{r}{T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P63}{LVV-P63} owner:} &
 \multicolumn{2}{l}{\textbf{ Austin Roberts } }\\\hline
-\multicolumn{2}{r}{ LVV-C114 owner:} &
+\multicolumn{2}{r}{T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C114}{LVV-C114} owner:} &
 \multicolumn{2}{l}{\textbf{
-    Undefined
-}
+Undefined }
 } \\\hline
-\textbf{Test Case} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
+\textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{LVV-T1598}
 & {\small Te-Wei Tsai } & {\small Te-Wei Tsai } &
 \begin{minipage}[]{6cm}
@@ -208,12 +244,12 @@ The personnel involved in the test campaign is shown in the following table.
 & {\small Te-Wei Tsai } & {\small  } &
 \begin{minipage}[]{6cm}
 \smallskip
-{\small (1) Software Engineer\\
-(1) Hardware Engineer }
+{\small  }
 \medskip
 \end{minipage}
 \\ \hline
 \end{longtable}
+}
 
 \newpage
 
@@ -223,56 +259,61 @@ The personnel involved in the test campaign is shown in the following table.
 \subsection{Summary}
 \label{sect:summarytable}
 
-\begin{longtable}{p{2cm}p{2.5cm}p{9cm}p{2.5cm}}
+{\small
+\begin{longtable}{p{2cm}cp{2.3cm}p{8.6cm}p{2.3cm}}
 \toprule
-\multicolumn{3}{p{13.5cm}}{ Test Plan {\bf LVV-P63: Camera Hexapod Functional Re-verification }} & Approved \\\hline
+\multicolumn{2}{r}{ T. Plan \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlan/LVV-P63}{LVV-P63}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ Camera Hexapod Functional Re-verification }} & Approved \\\hline
+\multicolumn{2}{r}{ T. Cycle \href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testCycle/LVV-C114}{LVV-C114}:} &
+\multicolumn{2}{p{10.9cm}}{\textbf{ Camera Hexapod Re-verification }} & In Progress \\\hline
+\textbf{Test Cases} &  \textbf{Ver.} & \textbf{Status} & \textbf{Comment} & \textbf{Issues} \\\toprule
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{LVV-T1598}
+&  1
+& Fail &
+\begin{minipage}[]{9cm}
+\smallskip
 
-  \multicolumn{3}{p{13.5cm}}{ Test Cycle {\bf LVV-C114: Camera Hexapod Re-verification }} & In Progress \\\hline
+\medskip
+\end{minipage}
+&
+\href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}
+\\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{LVV-T1599}
+&  1
+& Initial Pass &
+\begin{minipage}[]{9cm}
+\smallskip
 
-  {\bf \footnotesize test case} & {\bf \footnotesize status} & {\bf \footnotesize comment} & {\bf \footnotesize issues} \\\toprule
+\medskip
+\end{minipage}
+&
+\\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{LVV-T1600}
+&  1
+& Fail &
+\begin{minipage}[]{9cm}
+\smallskip
 
-    \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{LVV-T1598}
-    & Fail &
-    \begin{minipage}[]{9cm}
-    \smallskip
-    
-    \medskip
-    \end{minipage}
-    &
-          \href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}
-    \\\hline
-    \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{LVV-T1599}
-    & Initial Pass &
-    \begin{minipage}[]{9cm}
-    \smallskip
-    
-    \medskip
-    \end{minipage}
-    &
-    \\\hline
-    \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{LVV-T1600}
-    & Fail &
-    \begin{minipage}[]{9cm}
-    \smallskip
-    
-    \medskip
-    \end{minipage}
-    &
-          \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
-          \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
-    \\\hline
-    \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1611}{LVV-T1611}
-    & Not Executed &
-    \begin{minipage}[]{9cm}
-    \smallskip
-    
-    \medskip
-    \end{minipage}
-    &
-    \\\hline
+\medskip
+\end{minipage}
+&
+\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
+\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
+\\\hline
+\href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1611}{LVV-T1611}
+&  
+& Not Executed &
+\begin{minipage}[]{9cm}
+\smallskip
+
+\medskip
+\end{minipage}
+&
+\\\hline
 \caption{Test Campaign Summary}
 \label{table:summary}
 \end{longtable}
+}
 
 \subsection{Overall Assessment}
 \label{sect:overallassessment}
@@ -295,7 +336,7 @@ ensure the absolute accuracy of the Camera Hexapod.~
 
 Open test cycle {\it \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testrun/LVV-C114}{Camera Hexapod Re-verification}} in Jira.
 
-Camera Hexapod Re-verification\\
+Test Cycle name: Camera Hexapod Re-verification\\
 Status: In Progress
 
 Re-verify the hardware and software requirements for the Camera rotator
@@ -315,8 +356,9 @@ No varying configuration between test cycles.
 
 \subsubsection{Test Cases in LVV-C114 Test Cycle}
 
-\paragraph{Test Case LVV-T1598 - Camera Hexapod Hardware Functional Re-verification }\mbox{}\\
+\paragraph{ LVV-T1598 - Camera Hexapod Hardware Functional Re-verification }\mbox{}\\
 
+Version \textbf{1}.
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{\textit{ LVV-T1598 } }
 test case in Jira.
 
@@ -1075,8 +1117,9 @@ unexecuted and will be tested in the future with ComCam (with load).~
 
 \end{longtable}
 
-\paragraph{Test Case LVV-T1599 - Camera Hexapod Software Functional Re-verification }\mbox{}\\
+\paragraph{ LVV-T1599 - Camera Hexapod Software Functional Re-verification }\mbox{}\\
 
+Version \textbf{1}.
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{\textit{ LVV-T1599 } }
 test case in Jira.
 
@@ -2420,8 +2463,9 @@ state.
 
 \end{longtable}
 
-\paragraph{Test Case LVV-T1600 - Integration of Camera Hexapod with SAL 4.0 (LSST) }\mbox{}\\
+\paragraph{ LVV-T1600 - Integration of Camera Hexapod with SAL 4.0 (LSST) }\mbox{}\\
 
+Version \textbf{1}.
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{\textit{ LVV-T1600 } }
 test case in Jira.
 
@@ -4495,114 +4539,16 @@ state.
 
 \end{longtable}
 
-\paragraph{Test Case LVV-T1611 - Integration of Camera Hexapod with SAL 4.0 (MOOG) }\mbox{}\\
+\paragraph{ LVV-T1611 -  }\mbox{}\\
 
+Version \textbf{}.
 Open  \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1611}{\textit{ LVV-T1611 } }
 test case in Jira.
 
-{\textless{}\textless{}This Test Case is only to be executed in the
-event that Russell's code does not work\textgreater{}\textgreater{}}\\
-The objective of this test case is to re-verify the functional
-requirements of the camera hexapod's software, after shipment of the
-hardware from the vendor's facility to the Summit, as defined in \citeds{LTS-206}
-and \citeds{LTS-160}. This test case will only exercise the functionality that
-was executed previously and meets the following criteria:
-
-\begin{itemize}
-\tightlist
-\item
-  Only requires the use of MOOG's middleware code
-\item
-  Only requires the camera hexapod to be operable
-\item
-  Only requires command through the CSC after the cRIO is switched from
-  GUI mode to DDS mode
-\item
-  Only requires testing of the synchronous mode
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \textbf{Asynchronous mode is not a standard mode of operation}
-  \end{itemize}
-\item
-  Does \textbf{NOT} require the camera hexapod to be loaded with the
-  camera simulated mass or actual camera hardware
-\end{itemize}
-
-The software functional requirements were previously verified during the
-test campaign by the vendor at the vendor's facility and accepted by
-LSST during the Factory Acceptance Test review. The test procedure used
-during the vendor's acceptance testing is the \emph{LSST
-Hexapods-Rotator Software Acceptance Test Procedure} which is attached
-to this test case. The test steps of this test case are derived from the
-same procedure, but the order of the steps have been changed to reflect
-the \emph{Proposal of Hexapod Test~on Dec. 2019~}Confluence page which
-can be found linked in the Traceability tab. The difference between this
-test case and the~\emph{Integration of Camera Hexapod with SAL 4.0
-(LSST)~}is that this test case includes the procedures for testing the
-configureElevationRawLUT, configureAzimuthRawLUT, and
-configureTemperatureRawLUT commands.\\[2\baselineskip]See the attached
-\emph{LSST Rotator Hexapod's Manual} for more information on how to
-operate the hexapod.
+This Test Case has been archived. Information here may not completed.
 
 \textbf{ Preconditions}:\\
-Prior to the execution of this test case to re-verify the Camera Hexapod
-hardware functional requirements, the following Summit tasks must be
-completed:
 
-\begin{itemize}
-\tightlist
-\item
-  The Hexapod has been installed on the camera cart
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \url{https://jira.lsstcorp.org/browse/SUMMIT-3224}
-  \end{itemize}
-\item
-  The Hexapod Controller has been deployed on the summit
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \url{https://jira.lsstcorp.org/browse/SUMMIT-3229}
-  \end{itemize}
-\item
-  Boxes for the Hexapod have been transported to the 3rd level
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \url{https://jira.lsstcorp.org/browse/SUMMIT-3230}
-  \end{itemize}
-\item
-  All Hexapod cables and cabinets have been prepared for integration
-  with camera cart
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \url{https://jira.lsstcorp.org/browse/SUMMIT-3231}
-  \end{itemize}
-\item
-  The offset has been installed onto the integrating structure
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \url{https://jira.lsstcorp.org/browse/SUMMIT-3293}
-  \end{itemize}
-\item
-  The Camera Hexapod electrical connections have been tested
-
-  \begin{itemize}
-  \tightlist
-  \item
-    \url{https://jira.lsstcorp.org/browse/SUMMIT-3294}
-  \end{itemize}
-\end{itemize}
 
 Execution status: {\bf Not Executed }
 
