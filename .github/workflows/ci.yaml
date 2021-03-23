@@ -34,7 +34,7 @@ jobs:
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
         run: |
           source ${CONDA}/bin/activate docsteady-env
-          generate-tpr LVV-P63 SCTR-14.tex
+          docsteady  generate-tpr LVV-P63 SCTR-14.tex
         shell: bash
 
       - name: TeX build
