@@ -2,8 +2,6 @@ name: jira-docgen
 
 on:
   workflow_dispatch:
-      tags:
-         description: 'docgen tags'  
 
 jobs:
    generate:
