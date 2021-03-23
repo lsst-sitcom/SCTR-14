@@ -1,5 +1,4 @@
-name: jira-docgen
-
+name: docgen from Jira
 on:
   workflow_dispatch:
 
