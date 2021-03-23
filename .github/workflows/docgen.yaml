@@ -1,7 +1,14 @@
 name: jira-docgen
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
+     inputs:
+       logLevel:
+         description: 'Log level'     
+         required: true
+         default: 'warning'
+      tags:
+         description: 'docgen tags'  
 
 jobs:
    generate:
