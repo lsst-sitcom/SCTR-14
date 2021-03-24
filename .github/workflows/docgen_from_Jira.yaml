@@ -37,7 +37,7 @@ jobs:
           docsteady  generate-tpr LVV-P63 SCTR-14.tex
         shell: bash
  
-     - name: Create commit
+      - name: Create commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
