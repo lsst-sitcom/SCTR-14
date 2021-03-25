@@ -34,14 +34,14 @@ jobs:
         run: |
           source ${CONDA}/bin/activate docsteady-env
           docsteady generate-tpr LVV-P63 SCTR-14.tex
-          echo done
+          echo `ls -la SCTR-14.tex`
         shell: bash
  
       - name: Create commit
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git commit -sm "Update from JIRA " 
+          git commit -am "Update from JIRA " 
 
 
       - name: TeX build
