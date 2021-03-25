@@ -22,21 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install "lander<2.0.0"
 
-      - name: condaenv
-        run: |
-          conda init bash
-          conda create --name docsteady-env docsteady -c lsst-dm -c conda-forge
-        shell: bash
-
-      - name: docugen
-        env:
-          JIRA_USER: ${{ secrets.JIRA_USER }}
-          JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
-        run: |
-          source ${CONDA}/bin/activate docsteady-env
-          docsteady  generate-tpr LVV-P63 SCTR-14.tex
-        shell: bash
-
       - name: TeX build
         run: |
           docker run --rm -v `pwd`:/workspace -w /workspace lsstsqre/lsst-texmf:latest sh -c 'make'
