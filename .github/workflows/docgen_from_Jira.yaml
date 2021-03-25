@@ -32,9 +32,9 @@ jobs:
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
         run: |
-          conda info --envs
           source ${CONDA}/bin/activate docsteady-env
-          docsteady  generate-tpr LVV-P63 SCTR-14.tex
+          docsteady generate-tpr LVV-P63 SCTR-14.tex
+          echo done
         shell: bash
  
       - name: Create commit
