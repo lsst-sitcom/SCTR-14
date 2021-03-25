@@ -32,15 +32,26 @@ jobs:
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
         run: |
-          conda info --envs
           source ${CONDA}/bin/activate docsteady-env
-          docsteady  generate-tpr LVV-P63 SCTR-14.tex
+          docsteady generate-tpr LVV-P63 SCTR-14.tex
+          echo `ls -la SCTR-14.tex`
         shell: bash
  
-      - name: Upload resulting document as artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: SCTR-14.tex
-          path: ./sctr-14/SCTC-14.tex
+      - name: Create commit
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git commit --allow-empty -m "Update from JIRA " SCTR-14.tex 
 
 
+      - name: TeX build
+        run: |
+          docker run --rm -v `pwd`:/workspace -w /workspace lsstsqre/lsst-texmf:latest sh -c 'make'
+
+      - name: Landing page upload
+        if: ${{ github.event_name == 'push' }}
+        env:
+          LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
+          LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
+        run: |
+          lander --upload --pdf SCTR-14.pdf --lsstdoc SCTR-14.tex --ltd-product sctr-14
