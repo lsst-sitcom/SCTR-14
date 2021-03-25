@@ -41,7 +41,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@github.com
-          git commit -m "Update from JIRA " SCTR-14.tex 
+          git commit --allow-empty -m "Update from JIRA " SCTR-14.tex 
 
 
       - name: TeX build
