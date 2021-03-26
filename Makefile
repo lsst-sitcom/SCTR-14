@@ -34,7 +34,7 @@ meta.tex: Makefile .FORCE
 	/bin/echo '\newcommand{\vcsdate}{$(GITDATE)}' >>$@
 
 generate: .FORCE
-	docsteady  generate-tpr --namespace PSE LVV-P63 $(DOCNAME).tex
+	docsteady --namespace PSE generate-tpr LVV-P63 $(DOCNAME).tex
 
 #Traditional acronyms are better in this document
 acronyms.tex : ${TEX} myacronyms.txt skipacronyms.txt
