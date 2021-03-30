@@ -31,7 +31,9 @@ meta.tex: Makefile .FORCE
 	/bin/echo '\newcommand{\lsstDocType}{$(DOCTYPE)}' >>$@
 	/bin/echo '\newcommand{\lsstDocNum}{$(DOCNUMBER)}' >>$@
 	/bin/echo '\newcommand{\vcsrevision}{$(GITVERSION)$(GITDIRTY)}' >>$@
+	/bin/echo '\newcommand{\vcsRevision}{$(GITVERSION)$(GITDIRTY)}' >>$@
 	/bin/echo '\newcommand{\vcsdate}{$(GITDATE)}' >>$@
+	/bin/echo '\newcommand{\vcsDate}{$(GITDATE)}' >>$@
 
 generate: .FORCE
 	docsteady --namespace PSE generate-tpr LVV-P63 $(DOCNAME).tex
