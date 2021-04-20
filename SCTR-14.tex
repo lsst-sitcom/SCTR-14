@@ -1,8 +1,8 @@
 % generated from JIRA project LVV
-% using template at /usr/local/anaconda3/envs/docsteady-env/lib/python3.7/site-packages/docsteady/templates/tpr.latex.jinja2.
-% using docsteady version 2.1
+% using template at /usr/share/miniconda/envs/docsteady-env/lib/python3.7/site-packages/docsteady/templates/tpr.latex.jinja2.
+% using docsteady version 2.1.4
 % Please do not edit -- update information in Jira instead
-\documentclass[DM,lsstdraft,STR,toc]{lsstdoc}
+\documentclass[PSE,lsstdraft,STR,toc]{lsstdoc}
 \usepackage{geometry}
 \usepackage{longtable,booktabs}
 \usepackage{enumitem}
@@ -31,7 +31,7 @@
 
 \title{LVV-P63: Camera Hexapod Functional Re-verification Test Plan and Report}
 \setDocRef{\lsstDocType-\lsstDocNum}
-\date{\vcsdate}
+\date{ 2021-04-20 }
 \author{ Holger Drass }
 
 \input{history_and_info.tex}
@@ -40,7 +40,9 @@
 \setDocAbstract{
 This is the test plan and report for
 \textbf{ Camera Hexapod Functional Re-verification},
-an LSST milestone pertaining to the Data Management Subsystem.
+an LSST milestone pertaining to the Project System Engineering and Commissioning.\\
+This document is based on content automatically extracted from the Jira test database on \docDate.
+The most recent change to the document repository was on \vcsDate.
 }
 
 
@@ -218,7 +220,7 @@ Holger Drass }
 } \\\hline
 \textbf{Test Cases} & \textbf{Assigned to} & \textbf{Executed by} & \textbf{Additional Test Personnel} \\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1598}{LVV-T1598}
-& {\small Holger Drass } & {\small Te-Wei Tsai } &
+& {\small Holger Drass } & {\small Holger Drass } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small  }
@@ -226,7 +228,7 @@ Holger Drass }
 \end{minipage}
 \\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{LVV-T1599}
-& {\small Holger Drass } & {\small Te-Wei Tsai } &
+& {\small Holger Drass } & {\small Holger Drass } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small (1) Software Engineer\\
@@ -235,7 +237,7 @@ Holger Drass }
 \end{minipage}
 \\ \hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{LVV-T1600}
-& {\small Holger Drass } & {\small Te-Wei Tsai } &
+& {\small Holger Drass } & {\small Holger Drass } &
 \begin{minipage}[]{6cm}
 \smallskip
 {\small (1) Software Engineer\\
@@ -270,18 +272,34 @@ Holger Drass }
 
 \medskip
 \end{minipage}
-&   \href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}
-\href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}
+&   \href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54}
+\href{https://jira.lsstcorp.org/browse/DM-29712}{DM-29712}
+\href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}
+\href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}
+\href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54}
+\href{https://jira.lsstcorp.org/browse/DM-29712}{DM-29712}
+\href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}
+\href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}
 \\\hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1599}{LVV-T1599}
 &  1
-& Initial Pass &
+& Fail &
 \begin{minipage}[]{9cm}
 \smallskip
 
 \medskip
 \end{minipage}
-&   \\\hline
+&   \href{https://jira.lsstcorp.org/browse/DM-29738}{DM-29738}
+\href{https://jira.lsstcorp.org/browse/DM-29788}{DM-29788}
+\href{https://jira.lsstcorp.org/browse/DM-29791}{DM-29791}
+\href{https://jira.lsstcorp.org/browse/DM-29792}{DM-29792}
+\href{https://jira.lsstcorp.org/browse/DM-29793}{DM-29793}
+\href{https://jira.lsstcorp.org/browse/DM-29738}{DM-29738}
+\href{https://jira.lsstcorp.org/browse/DM-29788}{DM-29788}
+\href{https://jira.lsstcorp.org/browse/DM-29791}{DM-29791}
+\href{https://jira.lsstcorp.org/browse/DM-29792}{DM-29792}
+\href{https://jira.lsstcorp.org/browse/DM-29793}{DM-29793}
+\\\hline
 \href{https://jira.lsstcorp.org/secure/Tests.jspa#/testCase/LVV-T1600}{LVV-T1600}
 &  1
 & Fail &
@@ -290,14 +308,18 @@ Holger Drass }
 
 \medskip
 \end{minipage}
-&   \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
-\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
-\href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}
-\href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}
-\href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}
-\href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}
-\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
-\href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}
+&   \href{https://jira.lsstcorp.org/browse/DM-29550}{DM-29550}
+\href{https://jira.lsstcorp.org/browse/DM-29692}{DM-29692}
+\href{https://jira.lsstcorp.org/browse/DM-29689}{DM-29689}
+\href{https://jira.lsstcorp.org/browse/DM-29693}{DM-29693}
+\href{https://jira.lsstcorp.org/browse/DM-29705}{DM-29705}
+\href{https://jira.lsstcorp.org/browse/DM-29706}{DM-29706}
+\href{https://jira.lsstcorp.org/browse/DM-29689}{DM-29689}
+\href{https://jira.lsstcorp.org/browse/DM-29550}{DM-29550}
+\href{https://jira.lsstcorp.org/browse/DM-29692}{DM-29692}
+\href{https://jira.lsstcorp.org/browse/DM-29693}{DM-29693}
+\href{https://jira.lsstcorp.org/browse/DM-29705}{DM-29705}
+\href{https://jira.lsstcorp.org/browse/DM-29706}{DM-29706}
 \\\hline
 \caption{Test Campaign Summary}
 \label{table:summary}
@@ -457,7 +479,14 @@ Final comment:\\
 Issues found during the execution of LVV-T1598 test case:
 
 \begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}~~Camera Hexapod Drive \#3 Failure
+\item \href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54}~~Camera Hexapod actuator number 6 failure
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29712}{DM-29712}~~The center of rotation and the z position in the EUI have an offset of
+820.4mm
+
+\item \href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}~~Camera Hexapod absolute XYZ value accuracy not reached
+
+\item \href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}~~Camera Hexapod absolute XYZ value accuracy not reached
 
 \end{itemize}
 
@@ -465,7 +494,7 @@ Detailed steps results:
 
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 1 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 1 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -489,12 +518,14 @@ A prompt to enter the password is shown.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We saw the prompt window and was asked for the password.
+Startup procedure (Step 1-8) passed. See parallel execution of LVV-T1600
+\href{https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlayer/testExecution/LVV-E1226}{(LVV-E1226})
+for details.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 2 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 2 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -518,14 +549,11 @@ publish through SAL but cannot receive commands.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-After we entered the ``lsst-vnc'', we can log in the system. The initial
-state is Offline State/PublishOnly. We saw the green light of DDS
-connected.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 3 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 3 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -547,12 +575,11 @@ eGUI.\\[2\baselineskip]
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the OfflineState/AvailableState substate.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 4 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 4 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -571,12 +598,11 @@ The State Triggers dialogue box shown below becomes visible.\\
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Standby state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 5 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 5 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -594,12 +620,11 @@ display box at the top of the Main says Standby State.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Standby state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 6 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 6 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -618,12 +643,11 @@ previous DDS start command.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Disabled state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 7 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 7 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -641,12 +665,11 @@ motor drives are enabled and and motion can be commanded.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Enabled state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 8 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 8 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -669,14 +692,6 @@ The system transitions back to the OfflineState/PublishOnly substate.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-For the safety interlock, press the E-stop first, click the switch
-button of release interlock 2, release the E-stop, click the switch
-button of reset interlock. By doing this, we could put/ release the
-safety interlock. No clearError in software side is
-needed.\\[2\baselineskip]When we opened the hexapod GUI, there was the
-simulink error after hitting the systemReady command and entered the
-Fault state. We can use the clearError to leave the Fault state and do
-the state transitions.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
@@ -693,40 +708,37 @@ Acceptance Test Procedure, Sheet 23-24.}
   Test Data \\
  {\footnotesize
 \textbf{Deviation:~}Test this with no performance payload and at a
-single elevation angle of zero degrees.
+single elevation angle of zero degrees. Wait for 39s between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 The position of the hexapod is able to be commanded and no software
-limits or limit switches are tripped.
+limits or limit switches are tripped.\\
+The position of the hexapod is able to reach the commanded positions
+within the absolute accuracy specifications of 25um in Z, 125um in XY,
+205x10-5deg in RXRY, and 1500x10-5deg in RZ.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Measurements for the positioning could not be completed due to a failure
-in drive \#3.\\
-1) The tilt angle, tilt offset distance and pivot distance are all OK,
-but once reached, the X and Zdon't seem to be able to reach position to
-within \textasciitilde{}2mm\\
-2) Laser tracker seems to contradict MOOG's statement about corners
-representing different combinations of the maximum simultaneous range
-requirements for X and Z
+Failed: Camera hexapod actuator \#6 presented a dead zone at the second
+move.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Issues found executing this step:  \\
 {\footnotesize
 \begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/FRACAS-28}{FRACAS-28}~~Camera Hexapod Drive \#3 Failure
+\item \href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54}~~Camera Hexapod actuator number 6 failure
 
 \end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 10 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 10 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -737,7 +749,8 @@ Hexapods-Rotator Acceptance Test Procedure, Sheet 24-25.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Record pivot position through the EUI.
+\textbf{Deviation:~}Record pivot position through the EUI. Wait for 39s
+between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -749,18 +762,22 @@ The center of rotation is able to be moved.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-\emph{COR at 1.938m from the rotator to camera interface}\\
-Laser tracker-determined COR: 1930+/-8.2{[}mm{]}\\
-\emph{COR at the rotator to camera interface}\\
-Laser tracker-determined COR: set value COR 33.75{[}mm{]}; SA measured =
-923+/-1 {[}mm{]}\\
-Complies with requirement with caveat that there is an offset at the
-rotatorsurface: 820.4mm
+The center of rotation and the z position in the EUI have an offset of
+820.4mm
 
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29712}{DM-29712}~~The center of rotation and the z position in the EUI have an offset of
+820.4mm
+
+\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 11 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 11 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -772,18 +789,19 @@ Hexapods-Rotator Acceptance Test Procedure, Sheet 25.}
   Expected Result \\
 {\footnotesize
 There is no cross-talk observed (actuator positioning errors and
-erroneous geometry are minimal)
+erroneous geometry are minimal).
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Based on rest of tests
+Observed positioning errors are within the acceptable error
+range.\\[2\baselineskip]
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 12 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 12 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -794,7 +812,8 @@ LSST Hexapods-Rotator Acceptance Test Procedure, Sheet 25.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Only test at a zero degree elevation angle.
+\textbf{Deviation:~}Only test at a zero degree elevation angle. Wait for
+39s between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -807,19 +826,28 @@ in the Acceptance Test Procedure.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-1. 7.57428275,0,0,0,0,0\\
-2. 5.3578403, 5.37473926,0,0,0,0\\
-3. 0,7.58852237,0,0,0,0\\
-4. -5.34249993, 5.33297113,0,0,0,0\\
-5. -7.57839578,0,0,0,0,0\\
-6. -5.34249993, -5.38597352,0,0,0,0\\
-7. 0;-7.55189491,0,0,0,0\\
-8. 5.3578403; -5.34205358;0;0;0;0
+Test failed, see detailed results from the laser tracking measurement
+done by Roberto Tighe and Mario Rivera.\\
+The error needs to be interpreted as: sqrt( (errX\^{}2) + (errY\^{}2) )
+= 125um\\
+Error is:\\
+For test 3.3.5. (line 28) command position in XYZ is (7,6,0,0) and the
+result is(7,52, -0.12, -0,02). That makes a difference of (80 um,
+-120um, -20um).\\
+The calculated result is: sqrt(120um\^{}2+ 80um\^{}2)= 148um?
 
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}~~Camera Hexapod absolute XYZ value accuracy not reached
+
+\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 13 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 13 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -830,7 +858,8 @@ Hexapods-Rotator Acceptance Test Procedure, Sheet 27.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Only test at a zero degree elevation angle.
+\textbf{Deviation:~}Only test at a zero degree elevation angle. Wait for
+39s between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -843,14 +872,24 @@ in the Acceptance Test Procedure.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-1. 0;0;8.72487391;0;0;0\\
-2. 0,0, -8.710510168,0,0,0\\
-3. 0;0;8.70619302;0;0;0
+Failed with error up to 60 micron.\\
+For the absolute accuracy in Z of the four available values (lines
+28,32,33 and 58, file attached to step 12) only the first value meets
+the specification.\\
+The error seems growing with more moves (20um,30um,40um,60um).
 
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/LVV-19501}{LVV-19501}~~Camera Hexapod absolute XYZ value accuracy not reached
+
+\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 14 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 14 & Step Execution Status: \textbf{ Blocked } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -862,7 +901,8 @@ Sheet 28-29.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Only test at a zero degree elevation angle.
+\textbf{Deviation:~}Only test at a zero degree elevation angle. Wait for
+39s between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -875,21 +915,12 @@ listed in the Acceptance Test Procedure.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command (0,0,0,0.24 deg,0,0): (0,0,0,0.2429,0,0)\\
-Command (0,0,0,0.170deg,0.170deg,0): (0,0,0,0.1732,0.1707,0)\\
-Command (0,0,0,0,0.24deg,0): (0,0,0,0.2402,0,0)\\
-Command (0,0,0,-0.170deg,0.170deg,0): (0,0,0,-0.1689,0.1714,0)\\
-Command (0,0,0,-0.24deg,0,0): (0,0,0,-0.2414,0,0)\\
-Command (0,0,0,-0.170deg,-0.170deg,0): (0,0,0,-0.169,-0.1703,0)\\
-Command (0,0,0,0,-0.24deg,0): (0,0,0,0,-0.2431,0)\\
-Command (0,0,0,0.170deg,-0.170deg,0):
-(0,0,0,0.173,-0.1714,0)\\[2\baselineskip]Measurements error
-STDEV\textless{}0.00205Deg
+Blocked by \href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 15 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 15 & Step Execution Status: \textbf{ Blocked } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -900,7 +931,8 @@ LSST Hexapods-Rotator Acceptance Test Procedure, Sheet 30.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Only test at a zero degree elevation angle.
+\textbf{Deviation:~}Only test at a zero degree elevation angle. Wait for
+39s between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -913,9 +945,7 @@ in the Acceptance Test Procedure.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command (0,0,0,0,0,0.1deg): (0,0,0,0,0,0.0999)\\
-Command (0,0,0,0,0,-0.1deg): (0,0,0,0,0,-0.09955)\\[2\baselineskip]Error
-\textless{} 0.015Deg
+Blocked by \href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
@@ -939,11 +969,13 @@ equipment.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Not executed. TBD after
+\href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54} is solved.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 17 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 17 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -954,24 +986,28 @@ Hexapods-Rotator Acceptance Test Procedure, Sheet 38-42.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Only test at a zero degree elevation angle.
+\textbf{Deviation:~}Only test at a zero degree elevation angle. Wait for
+39s between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 The accuracy of the hexapod is good enough to be consistently repeated.
+The accuracy of the hexapod is at least the following: 25um in Z, 125um
+in XY, 205x10-5deg in RXRY, and 1500x10-5deg in RZ.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Shall be done in test cases 12-15.
+Not executed. TBD after
+\href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54} is solved.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 18 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 18 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -983,7 +1019,8 @@ LSST Hexapods-Rotator Acceptance Test Procedure, Sheet 43-44.}
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-\textbf{Deviation:~}Only test this using synchronous mode.
+\textbf{Deviation:~}Only test this using synchronous mode. Wait for 39s
+between movements.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -996,7 +1033,8 @@ and RZ requirements.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Hexapod meets requirements.
+Not executed. TBD after
+\href{https://jira.lsstcorp.org/browse/FRACAS-54}{FRACAS-54} is solved.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
@@ -1019,8 +1057,8 @@ meet the heat dissipation requirement.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-As this was originally tested with a surrogate mass, this step was left
-unexecuted and will be tested in the future with ComCam (with load).~
+Not executed. Temperature sensors are about to be installed. This will
+be used to monitor the heat dissipation.
 
 }
 
@@ -1130,16 +1168,35 @@ completed:
   \end{itemize}
 \end{itemize}
 
-Execution status: {\bf Initial Pass }
+Execution status: {\bf Fail }
 
 Final comment:\\
 
+Issues found during the execution of LVV-T1599 test case:
+
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29738}{DM-29738}~~Camera hexapod unexpectd behavior. ``positionSet'' command is accepted
+in EnabledState.
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29788}{DM-29788}~~Camera Hexapod: The state of the state machine needs to be changed to
+``clearError'' caused by unplugging the motor encoder.
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29791}{DM-29791}~~Camera Hexapod: The EUI needs to be restared to ``clearError'' caused by
+unplugging the linear encoder.
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29792}{DM-29792}~~Camera Hexapod: The Enabled substate needs to be changed ``manually'' to
+``clearError'' caused by unplugging the motor power cable.
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29793}{DM-29793}~~Camera Hexapod: The EUI needs to be restarted after re-plugging the
+EtherCat cable
+
+\end{itemize}
 
 Detailed steps results:
 
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 1 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 1 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1163,12 +1220,13 @@ A prompt to enter the password is shown.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We saw the prompt window and asked for the password.
+The start-up procedure was working. For details see:
+https://jira.lsstcorp.org/secure/Tests.jspa\#/testPlayer/testExecution/LVV-E1226
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 2 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 2 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1192,14 +1250,11 @@ publish through SAL but cannot receive commands.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-After we entered the ``lsst-vnc'', we can log in the system. The initial
-state is Offline State/PublishOnly. We saw the green light of DDS
-connected.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 3 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 3 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1221,12 +1276,11 @@ eGUI.\\[2\baselineskip]
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the OfflineState/AvailableState substate.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 4 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 4 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1245,12 +1299,11 @@ The State Triggers dialogue box shown below becomes visible.\\
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Standby state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 5 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 5 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1268,12 +1321,11 @@ display box at the top of the Main says Standby State.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Standby state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 6 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 6 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1292,12 +1344,11 @@ previous DDS start command.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Duplication of the test case 6 in LVV-T1598.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 7 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 7 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1315,12 +1366,11 @@ motor drives are enabled and and motion can be commanded.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Disabled state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 8 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 8 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1343,19 +1393,11 @@ The system transitions back to the OfflineState/PublishOnly substate.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-For the safety interlock, press the E-top first, click the switch button
-of release interlock 2, release the E-stop, click the switch button of
-reset interlock. By doing this, we could put/ release the safety
-interlock. No clearError in software side is
-needed.\\[2\baselineskip]When we opened the hexapod GUI, there was the
-simulink error after hitting the systemReady command and entered the
-Fault state. We can use the clearError to leave the Fault state and do
-the state transitions.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 9 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 9 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1376,13 +1418,12 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (0um, 0um, 200um, 0 deg, 0 deg, 0
-deg) only and the hexapod did not move.
+Confirmed. The hexapod does not move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 10 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 10 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1400,17 +1441,23 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (2000um, -3500um, 200um, .01 deg,
--.05deg, .002deg) only and the hexapod did not move.
+Confirmed. The camera hexapod does not move.\\[2\baselineskip]
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 11 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 11 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
 Send a move command using the EUI.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+Pivot position is shown in the GUI. Please mention in the results. Use
+the MOOG pivot point for comparability with the previous results.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -1425,15 +1472,118 @@ telemetry screen.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We saw the movement of hexapod with position (2000um, -3500um, 200um,
-.01 deg, -.05deg, .002deg) after hitting the move command. The final
-position is (1999um, -3500um, 200um, .01 deg, -.05deg, .002deg) on GUI.
-We saw a ``1 um'' difference in x position.
+The pivot position is ~-2.7584E+6.\\[2\baselineskip]On the first try the
+hexapod went into fault state:\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: SYNCHRONOUS CMD\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: CMD: drive 0 pos -38451648
+-38828365\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: CMD: drive 0 accel 16191
+12237\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: CMD: drive 1 pos -42583267
+-39107649\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: CMD: drive 1 accel 49998
+9408\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: CMD: drive 2 pos -38510707
+-41616191\\
+Apr 14 12:29:03 camhex journal: LSST Wrapper: CMD: drive 2 accel 15428
+16896\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive tracking error
+reported\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1 latched fault
+codes: 200 0\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1 status, codes:
+7b98 5237\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1A state=Fault\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1B state=Operation
+enabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1A lastFault=\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: = generic fault\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Need to Halt: SETTING
+quickstop=1\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 0A state=Quick stop
+active\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 0B state=Quick stop
+active\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1A state=Switch on
+disabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1B state=Quick stop
+active\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1A lastFault=\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: = position tracking\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 2A state=Quick stop
+active\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 2B state=Quick stop
+active\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 0A state=Switch on
+disabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 0B state=Switch on
+disabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1A state=Switch on
+disabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 1B state=Switch on
+disabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 2A state=Switch on
+disabled\\
+Apr 14 12:29:04 camhex journal: LSST Wrapper: Drive 2B state=Switch on
+disabled\\[2\baselineskip]Hexapod had moved a few microns in all axis\\
+Hexapod in fault state\\
+Actuator enabled State is Moving Pt-Pt\\
+Stop command send.\\
+Actuator enabled State is Moving Pt-Pt\\
+Fault cleared through EUI.\\
+State changed to Standby state\\
+Actuator enabled State stays in Moving Pt-Pt\\
+Fault cleared through EUI.\\
+Actuator enabled State stays in Moving Pt-Pt\\
+Start command send ---\textgreater{} state changed to disabled state\\
+Actuator enabled State stays in Moving Pt-Pt\\
+Enable command send ---\textgreater{} State changed to enabled state\\
+Actuator enabled State stays in Moving Pt-Pt\\
+Stop command send\\
+Actuator enabled State changed to
+Stationary\\[2\baselineskip]\includegraphics[width=3.12500in]{jira_imgs/1655.png}\\
+\includegraphics[width=3.12500in]{jira_imgs/1656.png}\\
+\includegraphics[width=3.12500in]{jira_imgs/1657.png}\\
+Second try\\[2\baselineskip]Move command send nothing append\\
+PositionSet command in Enabled state send\\
+Move command send. Hexapod moved to the desired
+position\\[2\baselineskip]This means the positionSet command is accepted
+in EnabledState.\\
+This is not expected from the EUI since positionSet is an
+\textbf{Offline SubState} Command.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29738}{DM-29738}~~Camera hexapod unexpectd behavior. ``positionSet'' command is accepted
+in EnabledState.
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 12 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 12 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 13 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1456,18 +1606,12 @@ The actuator positions do not change, but the hexapod position is
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The default pivot position is (0, 0, -2758400um). Change the pivot to
-(0, 0, 0) in the offline state (it can not be changed in the enabled
-state). The hexapod position is (-408um, -3982um, 199um, 0.01deg,
--0.05deg, 0.002deg). The x position differs by 1 um from the case
-11.\\[2\baselineskip]PS. The pivot value can only be changed in the
-offline state not enabled/stationary state. There will be a prompt
-window to complain the wrong state.
+Confirmed. No movement. The position has changed to the expected value.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 13 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 14 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1484,13 +1628,13 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (2000um, -3500um, 200um, .01 deg,
--.05deg, .002deg) only and the hexapod did not move.
+State machine changed to enabled /stationary state. PositionSet command
+send. No movement observed.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 14 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 15 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1508,13 +1652,31 @@ for the new pivot point.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The hexapod moved to the position of (2000um, -3500um, 200um, .01 deg,
--.05deg, .002deg) based on GUI with the new pivot point.
+Confirmed the hexapod moved to the expected position.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 15 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 16 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 17 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1535,13 +1697,12 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (500um, 800um, 200um, 0 deg, 0 deg, 0
-deg) only and the hexapod did not move.
+Confirmed. positionSet command send. Hexapod did not move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 16 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 18 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1558,13 +1719,14 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the offset command of (0um, 0um, 2000um, 0 deg, 0 deg, 0 deg)
-only and the hexapod did not move.
+Deviation: To avoid dead zone in actuator six command (0,0,-2000,0,0,0)
+was send.\\
+Hexapod did not move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 17 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 19 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1574,22 +1736,43 @@ Send a move command.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The hexapod moves only 2000um in Z from the previous position and the
-actuators complete the move at nearly the same time as seen on the
-motion complete lights on the telemetry screen.
+The hexapod moves only 2000um in Z from the previous position. Since the
+test is done in synchronous mode the actuators are expected to complete
+the move at nearly the same time as seen on the motion complete lights
+on the telemetry screen.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Put the hexapod to origin. Do the case 15 and 16 and move. The hexapod
-moves to (1um, 0, 2000um, 0, 0, 0). We saw the offset command will
-override the positionSet command from case 15.
+Deviation: To avoid dead zone in actuator six command (0,0,-2000,0,0,0)
+was send.\\
+Hexapod moved to (200,-3500-1800,0.01,-0.05)\\
+The actuators finished the move nearly at the same time.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 18 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 20 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 21 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1608,13 +1791,20 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (0, 0, 0, 0.1deg, 0, 0) only and the
-hexapod did not move.
+\begin{enumerate}
+\tightlist
+\item
+  Hexapod moved back to (0,0,0,0,0,0)
+\item
+  positionSet command send.
+\item
+  No movement.
+\end{enumerate}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 19 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 22 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1631,15 +1821,31 @@ The hexapod moves to the commanded position of (0um, 0um, 0um, 0.1deg,
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-1. The hexapod moved to (0 , -2um, 0, 0.1deg, 0, 0) based on GUI from
-the (1um, 0, 2000um, 0, 0, 0) in case 17.\\
-2. The hexapod moved to (0 , 1um, 0, 0.1deg, 0, 0) based on GUI from the
-origin (0, -1um, 0, 0, 0, 0).
+Hexapod moves to the expected position as commanded.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 20 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 23 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 24 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1657,13 +1863,20 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (0, 0, 0, 0, 0.1deg, 0) only and the
-hexapod did not move.
+\begin{enumerate}
+\tightlist
+\item
+  Hexapod moved back to (0,0,0,0,0,0)
+\item
+  positionSet command send.
+\item
+  No movement.
+\end{enumerate}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 21 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 25 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1680,13 +1893,31 @@ The hexapod moves to the commanded position of (0um, 0um, 0um, 0deg,
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The hexapod moved to (0 , -1um, 0, 0, 0.1deg, 0) based on GUI from the
-origin (0, -1um, 0, 0, 0, 0).
+Hexapod moves to the expected position as commanded.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 22 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 26 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 27 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1704,13 +1935,18 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (0, 0, 0, 0.1deg, 0.1deg, 0) only and
-the hexapod did not move.
+\begin{enumerate}
+\tightlist
+\item
+  positionSet command send.
+\item
+  No movement.
+\end{enumerate}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 23 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 28 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1727,13 +1963,31 @@ The hexapod moves to the commanded position of (0um, 0um, 0um, 0.1deg,
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The hexapod moved to (0 , 0, 0, 0.1deg, 0.1deg, 0) based on GUI from the
-origin (0, 0, 0, 0, 0, 0).
+Hexapod moves to the expected position as commanded.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 24 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 29 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 30 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1753,13 +2007,14 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We sent the positionSet command of (0, 0, 5000um, 0, 0, 0) only and the
-hexapod did not move.
+Deviation: To avoid dead zone in actuator six command (0,0,-5000,0,0,0)
+was send.\\
+Hexapod did not move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 25 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 31 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1775,17 +2030,35 @@ The hexapod starts to move to the commanded position.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The hexapod was moving to to (0 , 0, ~5000um, 0, 0, 0) based on GUI from
-the origin (1um, 0, 0, 0, 0, 0).
+Confirmed hexapod starts movement.\\[2\baselineskip]
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 26 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 32 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-While the hexapod is moving, send a stop command.~
+Wait 3s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 33 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the stop command.~
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -1798,12 +2071,12 @@ position.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The hexapod stopped at the position of (0, 0, 2300um , 0, 0, 0).
+Confirmed hexapod stopped nearly immediately.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 27 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 34 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1822,12 +2095,12 @@ The rotator starts in the Offline/PublishOnly state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-It is the Offline/PublishOnly state at startup.
+Confirmed, the hexapod starts in Offline/PublishOnly state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 28 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 35 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1843,12 +2116,13 @@ The system transitions into the Offline/Available substate.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Offline/Available substate.
+Confirmed, The system transitions into the Offline/Available substrate
+upon receiving the SystemReady offline substate trigger.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 29 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 36 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1864,12 +2138,12 @@ The system transitions from Offline/Available to Standby state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Standby state.
+Confirmed
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 30 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 37 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1885,12 +2159,12 @@ The system transitions from Standby to Disabled state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Disabled state.
+Confirmed
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 31 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 38 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1906,12 +2180,12 @@ The system transitions from Disabled to Enabled state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Enabled state.
+Confirmed
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 32 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 39 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1927,12 +2201,12 @@ The system transitions from Enabled to Disabled state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Disabled state.
+Confirmed
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 33 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 40 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1948,12 +2222,12 @@ The system transitions from Disabled state to Standby state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Standby state.
+Confirmed
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 34 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 41 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1969,12 +2243,12 @@ The system transitions from Standby state to Offline state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Offline state.
+Confirmed. Transitions to OfflineState/Available.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 35 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 42 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -1990,12 +2264,12 @@ The system transitions to Fault state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The system transited to Fault state.
+Felipe tried the limit switches. Behavior was as expected.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 36 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 43 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2005,19 +2279,23 @@ Reset the safety interlock and send a ClearError trigger.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The system transitions from Fault state to Offline state
+The EUI, upon receiving the ¨clearError¨ trigger, transitions from
+FaultState to OfflineState/PublishOnly when the system was in any of the
+OfflineStates before the error occurred. The EUI, upon receiving the
+``clearError'' trigger, transitions to StandbyState when it was in
+EnableState or DisableState before the error occurred.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We did not send the clearError. We used the mechanical switches to
-remove the interlock error. This is considered to be done.
+Sending a clearError command transitions the state machine into
+StandbyState.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 37 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 44 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2043,11 +2321,47 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Strut 11 motor cable disconnection detected.\\
+\includegraphics[width=3.12500in]{jira_imgs/1668.png}\\
+no message at lsst.sal.Script.logevent\_logMessage.message
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 38 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 45 & Step Execution Status: \textbf{ Fail } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+``clearError'' cleared Drive fault but not Simulink.\\
+Status changed to disabled.\\
+``clearError'' cleared Simulink.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29788}{DM-29788}~~Camera Hexapod: The state of the state machine needs to be changed to
+``clearError'' caused by unplugging the motor encoder.
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 46 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2065,11 +2379,90 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+\includegraphics[width=3.12500in]{jira_imgs/1669.png}\\
+Confirmed! For strut 12.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 39 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 47 & Step Execution Status: \textbf{ Fail } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Fault can not be cleared from the EUI.\\
+Rest bottom did not reset the fault.\\
+Restarting the EUI rested the fault.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29791}{DM-29791}~~Camera Hexapod: The EUI needs to be restared to ``clearError'' caused by
+unplugging the linear encoder.
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 48 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+In the Enabled/Stationary state, unplug a linear encoder cable for one
+of the actuators.~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+A Drive Fault error event is created and the system transitions to Fault
+state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Duplicate of step 46.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 49 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 50 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2087,11 +2480,49 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+\includegraphics[width=3.12500in]{jira_imgs/1670.png}Hexapod stopped
+after 1sec.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 40 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 51 & Step Execution Status: \textbf{ Fail } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Fault cleared, the system is in StandbyState.\\
+Transitioned to enabled trough EUI\\
+Entered into Enabled/MoivingPT-PT without hexapod movement.\\
+Stop command send through EUI.\\
+Status changed to enabled /stationary.\\[2\baselineskip]Moved back to
+zero successfully.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29792}{DM-29792}~~Camera Hexapod: The Enabled substate needs to be changed ``manually'' to
+``clearError'' caused by unplugging the motor power cable.
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 52 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2109,11 +2540,34 @@ transitions into Fault state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Done by Felipe before.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 41 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 53 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Done by Felipe before.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 54 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2131,11 +2585,34 @@ transitions into Fault state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Done by Felipe before.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 42 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 55 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Done by Felipe before.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 56 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2148,6 +2625,38 @@ XE2 drive.
 {\footnotesize
 An Ethercat Lost event is created and the system transitions to Fault
 state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+The you EUI switched of without warning.\\
+\includegraphics[width=3.12500in]{jira_imgs/1671.png}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29793}{DM-29793}~~Camera Hexapod: The EUI needs to be restarted after re-plugging the
+EtherCat cable
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 57 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send the ``clearError'' trigger and bring the system to the
+Enabled/Stationary state.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The system is in the Enabled/Stationary state and ready to be commanded.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -2268,13 +2777,17 @@ Final comment:\\
 Issues found during the execution of LVV-T1600 test case:
 
 \begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}~~Check position limits for Hexapod move and offset commands
+\item \href{https://jira.lsstcorp.org/browse/DM-29550}{DM-29550}~~ControlledStop event
 
-\item \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}~~Check position limits for Hexapod move and offset commands
+\item \href{https://jira.lsstcorp.org/browse/DM-29692}{DM-29692}~~Camera MThexapod CompensationMode does not work
 
-\item \href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}~~Clean up XML for (MT) Rotator and Hexapod
+\item \href{https://jira.lsstcorp.org/browse/DM-29689}{DM-29689}~~Camera MThexapod inPosition event not generated
 
-\item \href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}~~Clean up XML for (MT) Rotator and Hexapod
+\item \href{https://jira.lsstcorp.org/browse/DM-29693}{DM-29693}~~Pivot changes are not reported in the EUI and the EFD.
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29705}{DM-29705}~~Camera hexapod state machine does not transition back to StandbyState
+
+\item \href{https://jira.lsstcorp.org/browse/DM-29706}{DM-29706}~~Disable command accepted but state machine did not change status
 
 \end{itemize}
 
@@ -2282,7 +2795,7 @@ Detailed steps results:
 
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 1 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 1 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2306,12 +2819,21 @@ A prompt to enter a password is shown.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We saw the prompt window and asked for the password.
+Starting the EUI is done through X2GO and the terminal.\\
+Ask IT to set it up for you and copy the EUI scripts in the latest
+version on your account.\\
+CAVE: The logic of the limit switches changed. Only the latest version
+EUI version is working.\\
+Use your personalized X2GO account to connect to hexrot.cp.lsst.org\\
+Use your personalized IPA password to login into your account.\\
+Open a terminal. Change the past to
+\textasciitilde{}/Desktop/hexCntrlEui/bin\\
+Start the EUI with: ./runCamHexEui\\[2\baselineskip]
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 2 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 2 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2335,14 +2857,12 @@ publish through SAL but cannot receive commands.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-After we entered the ``lsst-vnc'', we can log in the system. The initial
-state is Offline State/PublishOnly. We saw the green light of DDS
-connected on GUI and the event of commandableByDDS from summit EFD.
+Included in the previous step.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 3 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 3 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2364,12 +2884,12 @@ OfflineState/AvailableState substate.\\[2\baselineskip]
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the OfflineState/AvailableState substate.
+Substate changes as expected.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 4 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 4 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2392,12 +2912,14 @@ The system is capable of receiving/responding to DDS commands.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We can do the DDS control.
+Control mode changes as expected. Note confirmed. Any command from the
+EUI changes the control back to the EUI. This must manually be changed
+to give control back to the DDS.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 5 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 5 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2416,12 +2938,12 @@ receiving/responding to DDS commands.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Standby state.
+State changes as expected.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 6 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 6 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2441,12 +2963,14 @@ invalid or out of range, the system will transition into a Fault State
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Disabled state.
+Here the range of the parameters in the configuration file.\\
+This is working. State machine transitioned from StandbyState to
+DisableState without faulting.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 7 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 7 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2466,12 +2990,17 @@ capable of receiving/responding to DDS commands.\\[2\baselineskip]
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-We transited the system to the Enabled state.
+Substate changes as expected.\\
+Motor drives are enabled.\\
+\textbf{Not sure if there are motor breaks. But if there are motor
+breaks they are released.}\\
+The system is capable of receiving/responding to DDS
+commands.\\[2\baselineskip]
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 8 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 8 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2494,12 +3023,115 @@ is not capable of receiving/responding to DDS commands. (Go back to Step
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Cleared error and transitioned back to OfflineState/Available
+Yes, the system goes to FaultState when a fault occurs in one of the
+other states.\\[2\baselineskip]Yes, the FaultState can be cleared by
+sending a clearError command through the DDS if the fault condition does
+not exist anymore.\\[2\baselineskip]Deviation: The system transitions
+back to StandbyState and can be commanded from DDS again. No need to go
+back to step 3.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 9 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 9 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Verify that the thermal sensors are connected and producing telemetry
+into the EFD.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+All actuator temperatures are published to the EFD.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Deviation: The thermal sensors were not available at the moment of the
+tests.\\
+The Tests were executed without the thermal sensors.\\
+A waiting time of 39 sec was added after each movement.\\
+This time is comparable to the time between two hexapod movements in
+operations.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 10 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+The following steps define what the Jupyter Notebook for this test case
+implements. Executing the Jupyter notebook is the only actual command
+and control step that needs to be executed.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The Jupyter notebook controls the system to run through the steps below.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Yes, the tests here were executed using the notebooks:\\
+https://github.com/lsst-ts/ts\_notebooks/blob/origin/tickets/SE-1372/procedures/lvv-t1600.ipynb\\
+and for the compensationMode tests:\\
+https://github.com/lsst-ts/ts\_notebooks/blob/origin/tickets/SE-1372/bxin/ptg2hex/hex\_diagnostics.ipynb
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 11 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Verify all the telemetry is being ingested into the EFD.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+All telemetry defined in the script is being ingested into the EFD.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+To make sure that the telemetry is ingested into the EFD a test message
+was sent to the EFD and read ~from Chronograph:\\
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[t]{0.32\columnwidth}\raggedright\strut
+time\\
+\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright\strut
+lsst.sal.Script.logevent\_logMessage.ScriptID\strut
+\end{minipage} & \begin{minipage}[t]{0.32\columnwidth}\raggedright\strut
+lsst.sal.Script.logevent\_logMessage.message\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.30\columnwidth}\raggedright\strut
+03/25/2021 12:41:12\\
+\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright\strut
+42658886.00\\
+\strut
+\end{minipage} & \begin{minipage}[t]{0.30\columnwidth}\raggedright\strut
+TEST to see if annotations like this arrive in the EFD.\\
+\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 12 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2512,6 +3144,14 @@ In enabled/stationary state, send a positionSet command of (0um, 0um,
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:~}Skip this step. positionSet and move command
+replaced by new move command. Now, the hexapod starts movement directly
+after receiving the command.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 The hexapod does not move.
@@ -2520,18 +3160,25 @@ The hexapod does not move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Did not move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 10 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 13 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
 With the synchronous button enabled and in enabled/stationary state,
-send a positionSet command of (2000um, -3500um, 200um, 0.01deg, -.05deg,
-0.002deg).
+send a positionSet command of (500um, -500um, 200um, 0.01deg, -0.015deg,
+0deg).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:~}Skip this step. positionSet and move command
+replaced by new move command. Now, the hexapod starts movement directly
+after receiving the command.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -2543,16 +3190,17 @@ The hexapod does not move
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Did not move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 11 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 14 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-Send a move command.
+With the hexapod in in enabled/stationary state sync=True and send the
+move command of (x= 500um,y= -500um, z=200um, u=0.01deg, v=-0.015deg,
+w=0deg).
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -2561,22 +3209,33 @@ Send a move command.
 \begin{itemize}
 \tightlist
 \item
-  The hexapod moves to (2000um, -3500um, 200um, 0.01deg, -.05deg,
-  0.002deg)
+  The hexapod moves to (x= 500um,y= -500um, z=200um, u=0.01deg,
+  v=-0.015deg, w=0deg)
 \item
-  The actuators complete the move at nearly the same time.
+  Since the Hexapod is in synchronous mode, the actuators complete the
+  move at nearly the same time.
 \end{itemize}
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Moved to 1999,-3500,200,0.01,0.05,0.002)
+The hexapod moved to the expected position and the results read from the
+EFD are:\\[2\baselineskip]
+
+\begin{verbatim}
+INFO:Script:STOP- Camera Hexapod Integration Test -- LVV-T1600 Test Step 7
+\end{verbatim}
+
+\begin{verbatim}
+hex position
+    500.05     -500.87      200.12        0.01       -0.01       -0.00  
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 12 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
+Step 15 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2599,29 +3258,78 @@ Record the corresponding DDS events that were generated.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Deviation: Russell will need to modify the XML as the vendor's version
-has no Boolean field for inPosition unlike for the Camera Rotator.
+Yes, the controllerState.enabledSubstate goes to
+MOVING\_POINT\_TO\_POINT when the move begins and STATIONARY when the
+move ends.\\[2\baselineskip]The inPosition event was not generated.\\
+Looking at the EFD, the EFD shows that only for actuator one a status is
+present.\\
+Actuators 2-6 always present the status zero.\\
+Assuming that the information from all six actuators is needed, the
+inPosition event is not generated because of missing information on
+actuators 2-6.\\[2\baselineskip]
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Issues found executing this step:  \\
 {\footnotesize
 \begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}~~Clean up XML for (MT) Rotator and Hexapod
+\item \href{https://jira.lsstcorp.org/browse/DM-29689}{DM-29689}~~Camera MThexapod inPosition event not generated
 
 \end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 13 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 16 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39 seconds.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 17 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Record the corresponding thermal sensors and verify they are below 19
+deg C. If they are above 19 deg C, wait until they are below 19 deg C to
+perform the following steps.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+All actuators are below 19 deg C.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Thermal sensors were not present during the tests. See step 9.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 18 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
 \textbf{Section 3.1.2 of the attached Software Acceptance Test
 Procedure\\
 Test Sequence \#5 - Stop Commands}\\
-In the enabled/stationary state, send a position set command of (0um,
-0um, 5000um, 0deg, 0deg, 0deg)
+In the enabled/stationary state, send a move command of (x=0um, y=0um,
+z=5000um, u=0deg, v=0deg, w=0deg)
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -2633,58 +3341,65 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Does not move
+Deviation: With the modified move command it is expected that the
+hexapod moves during the step to (x=0um, y=0um, z=5000um, u=0deg,
+v=0deg, w=0deg).\\
+When executing the move the hexapod started to moved and the movement
+was correctly reflected in the EFD.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 14 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 19 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-Send move command.
+Wait 3s.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The hexapod begins to move.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Begins to move.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 15 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 20 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-Before the hexapod completes its movement, send a stop command.
+Send a stop command.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-\begin{itemize}
-\tightlist
-\item
-  The hexapod stops before reaching the previously commanded position
-\end{itemize}
+The hexapod stops before reaching the previously commanded position
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Hexapod stopped
+Yes, the hexapod stopped at the following position:\\[2\baselineskip]
+
+\begin{verbatim}
+INFO:Script:STOP- Camera Hexapod Integration Test -- LVV-T1600 Test Step 11
+\end{verbatim}
+
+\begin{verbatim}
+hex position
+      0.38       -1.13    -1503.11       -0.00       -0.00        0.00  
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 16 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 21 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2700,6 +3415,26 @@ Record the corresponding DDS events that were generated.
   The controllerState.enabledSubstate goes to CONTROLLED\_STOPPING when
   the stop is requested, then STATIONARY when the hexapod has halted.
 \item
+  In the EFD the codes for the EnabledSubstate are:
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Stationary=0
+  \item
+    MovingPointToPoint=1
+  \item
+    SlewingOrTracking=2
+  \item
+    ControlledStopping=3
+  \item
+    Initializing=4
+  \item
+    Relative=5
+  \item
+    ConstantVelocity=6
+  \end{itemize}
+\item
   No inPosition event is generated.
 \end{itemize}
 
@@ -2707,82 +3442,304 @@ Record the corresponding DDS events that were generated.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-It works.
+Fail: There is no ControlledStopping event shown in the EFD under
+controllerState.enabledSubstate.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29550}{DM-29550}~~ControlledStop event
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 22 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39 seconds.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 17 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 23 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Record the corresponding thermal sensors and verify they are below 19
+deg C. If they are above 19 deg C, wait until they are below 19 deg C to
+perform the following steps.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+All actuators are below 19 deg C.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Thermal sensors were not present during the tests. See step 9.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 24 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
 \textbf{Section 3.1.2 of the attached Software Acceptance Test
 Procedure\\
-Test Sequence \#9 - positionSet and moveLUT}\\
-In enabled/stationary state, send a positionSet command of (0um, 0um,
-200um, 0deg, 0deg, 0deg)
+Test Sequence \#9 - positionSet and
+moveLUT}\\[2\baselineskip]\textbf{Update: Test the
+``setCompensationMode'' command.}\\[2\baselineskip]In enabled/stationary
+state, send a move command of (x=0um, y=0um, z=800um, u=0deg, v=0deg,
+w=0deg)\\[2\baselineskip]
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:} There is no ``positionSet'' and no ``moveLUT''
+command anymore. ``positionSet'' and ``move'' command replaced by new
+``move'' command. Now, the hexapod starts movement directly after
+receiving the command. moveLUT is replaced by a ``setCompensationMode''.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The hexapod doesn't move.
+The hexapod moves to the position (x=0um, y=0um, z=800um, u=0deg,
+v=0deg, w=0deg) and, since we are moving in synchronous mode, the
+actuators complete the move at nearly the same time.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Does not move
+The test is executed using the notebook:\\
+https://github.com/lsst-ts/ts\_notebooks/blob/origin/tickets/SE-1372/bxin/ptg2hex/hex\_diagnostics.ipynb\\
+Original results can be found in this notebook.\\
+Deviation: The hexapod is sent to and arrived at\\
+
+\begin{verbatim}
+Current Hexapod position
+     -0.74       0.03    -250.21       0.00       0.00      -0.00
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 18 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 25 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-In enabled/stationary state, send a positionSet command of (0um, 0um,
-800um, 0deg, 0deg, 0deg)
+Ensure that MTMount publishes the telescope elevation angle and
+MTRotator publishes the rotation angle of the rotator. Either as real
+components or through controllers simulating the components.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The hexapod doesn't move.
+Published telescope elevation and rotator angle.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Does not move
+Deviation: MTHexapod also expects MTMount azimuth.\\
+The real MTRotator component is publishing its angle at
+``lsst.sal.MTRotator.rotation.mean\_actualPosition''.\\
+The MTMount elevation and azimuth are published by a controller
+simulating the MTMount telemetry at
+``lsst.sal.MTMount.elevation.actualPosition'' and
+``lsst.sal.MTMount.azimuth.actualPosition''
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 19 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 26 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-Send a moveLUT (180deg, 60deg, and 10deg) command
+In enabled/stationary state, set ~``setCompensationMode'' command to
+enable=True.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The hexapod moves to a different position than (0um, 0um, 800um, 0deg,
-0deg, 0deg) and the actuators complete the move at nearly the same time.
+The hexapod does not move and the
+~MTHexapod.command\_setCompensationMode appears as true in the
+EFD.\\[2\baselineskip]logevent\_compensatedPosition is sent to the
+EFD.\\[2\baselineskip]
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Hexapod moves to a different position(1699,199,920,0.03,-0.02,0.016)
-(0,0,2970,0,0,0)
+EFD:\\[2\baselineskip]START- Camera Hexapod Integration Test --
+LVV-T1600 Compensation mode test Step 17- Starting time: 2021-03-25
+15:51:28.133715 UTC\\[2\baselineskip]START- Camera Hexapod Integration
+Test -- LVV-T1600 Compensation mode test Step 17- Starting time:
+2021-03-25 17:43:19.848705 UTC\\[2\baselineskip]STOP - 18:09
+UTC\\[2\baselineskip]The MTHexapod.command\_setCompensationMode event is
+generated and can be read from the EFD.\\[2\baselineskip]Once the
+setCompensationMode=true for the first time the logevents:
+``MTHexapod.logevent\_uncompensatedPosition'' and
+``MTHexapod.logevent\_compensatedPosition'' appear both to all the time
+in the EFD until about 1h after setCompensationMode=false.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 20 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 27 & Step Execution Status: \textbf{ Fail } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+In enabled/stationary state, send a move command of (0um, 0um, 800um,
+0deg, 0deg, 0deg)
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The hexapod moves to a slightly different position than (0um, 0um,
+800um, 0deg, 0deg, 0deg) and, since we are moving in synchronous mode,
+the actuators complete the move at nearly the same time.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Deviation: Move command to (0um, 0um, -250um, 0deg, 0deg, 0deg) send.\\
+Failure: The move command was rejected.\\
+When entering compensationMode the EUI keeps switching between
+Stationary and Moving Pt-Pt.\\
+EFD is reflecting this under
+``MTHexapod.logevent\_controllerState.enabledSubstate''\\
+Cause:\\
+Does this happens because actuators 2-6 do not report their position
+---\textgreater{} inPosition event is not generated ---\textgreater{}
+compensationMode keeps compensating ---\textgreater{} hexapod does not
+accept further move command because it is constantly ``moving''?
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29692}{DM-29692}~~Camera MThexapod CompensationMode does not work
+
+\end{itemize}
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 28 & Step Execution Status: \textbf{ Blocked } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Check if there are any different events between move with and without
+setCompensationMode=True. Check the movement in the EFD use:\\
+Compare logevent\_compensatedPosition to logevent\_uncompensatedPosition
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The changes are expected according to this table:\\
+\includegraphics[width=1.56250in]{jira_imgs/1620.png}\\
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Not tested: Hexapod is not compensating see previous
+step.\\[2\baselineskip]
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 29 & Step Execution Status: \textbf{ Blocked } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+In enabled/stationary state, send a move command of (0um, 0um, 800um,
+0deg, 0deg, 0deg)
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+The hexapod does not move since it stayed in compensationMode.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Not tested: Hexapod is not compensating see previous step.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 30 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39 seconds.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 31 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Record the corresponding thermal sensors and verify they are below 19
+deg C. If they are above 19 deg C, wait until they are below 19 deg C to
+perform the following steps.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+All actuators are below 19 deg C.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+Thermal sensors were not present during the tests. See step 9.
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 32 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2790,56 +3747,16 @@ Step 20 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
 \textbf{Section 3.1.2 of the attached Software Acceptance Test
 Procedure\\
 Test Sequence \#4 - Synchronous Offset and Move Commands}\\
-In enabled/stationary state, send a positionSet command of (500um,
-800um, 200um, 0deg, 0deg, 0deg)
+In enabled/stationary state, send a move command of (x=500um, y=800um,
+z=200um, u=0deg, v=0deg, w=0deg)
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-The hexapod doesn't move.
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-Did not move.
-
-}
-\begin{tabular}{p{2cm}p{14cm}}
-\toprule
-Step 21 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-In enabled/stationary state, send an offset command of (0um, 0um,
-2000um, 0deg, 0deg, 0deg).
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-The hexapod doesn't move.
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-
-}
-\begin{tabular}{p{2cm}p{14cm}}
-\toprule
-Step 22 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Send a move command.~
+\textbf{Deviation:} There is no positionSet command anymore. positionSet
+and move command replaced by new move command. Now, the hexapod starts
+movement directly after receiving the command.\\[2\baselineskip]
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -2848,7 +3765,52 @@ Send a move command.~
 \begin{itemize}
 \tightlist
 \item
-  The hexapod moves only 2000um in Z from the previous position
+  The hexapod moves to (x=500um, y=800um, z=200um, u=0deg, v=0deg,
+  w=0deg)
+\item
+  Since the Hexapod is in synchronous mode, the actuators complete the
+  move at nearly the same time.
+\end{itemize}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+\begin{verbatim}
+INFO:Script:START- Camera Hexapod Integration Test -- LVV-T1600 Test Step 24 - Starting time: 2021-03-25 18:26:29.385677 UTC
+\end{verbatim}
+
+\begin{verbatim}
+hex position
+      0.23       -0.60        0.33       -0.00       -0.00        0.00  
+\end{verbatim}
+
+Hexapod moves correctly to the ordered position and all actuators reach
+their position near at the same time.\\
+
+\begin{verbatim}
+hex position
+    500.01      800.37      200.19        0.00        0.00        0.00  
+\end{verbatim}
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 33 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+In enabled/stationary state, send an offset command of (0um, 0um, 500um,
+0deg, 0deg, 0deg).
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+\begin{itemize}
+\tightlist
+\item
+  The hexapod moves only 500um in Z from the previous position
 \item
   The actuators complete the move at nearly the same time.
 \end{itemize}
@@ -2857,12 +3819,70 @@ Send a move command.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Works.
+\begin{verbatim}
+INFO:Script:STOP- Camera Hexapod Integration Test -- LVV-T1600 Test Step 24
+\end{verbatim}
+
+\begin{verbatim}
+hex position
+    500.11      799.96      700.41       -0.00       -0.00       -0.00  
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 23 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
+Step 34 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Send a move command.~
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:} Skip this step. The Hexapod has already moved.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+\begin{itemize}
+\tightlist
+\item
+  The hexapod moves only 500um in Z from the previous position
+\item
+  The actuators complete the move at nearly the same time.
+\end{itemize}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 35 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 36 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2888,53 +3908,73 @@ Record the corresponding DDS events that were generated.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Deviation: Russell will need to modify the XML as the vendor's version
-has no Boolean field for inPosition unlike for the Camera Rotator.
+Failed to see: Step 15
+and~\url{https://jira.lsstcorp.org/browse/LVV-19496}
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Issues found executing this step:  \\
-{\footnotesize
-\begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/DM-21699}{DM-21699}~~Clean up XML for (MT) Rotator and Hexapod
-
-\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 24 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 37 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
 \textbf{Section 3.1.2 of the attached Software Acceptance Test
 Procedure\\
 Test Sequence \#2 -Pivot, PositionSet and Move Commands}\\
-In enabled/stationary state, send a positionSet command of (2000um,
--3500um, 200um, 0.01deg, -0.05deg, 0.002deg)
+In enabled/stationary state, send a move command of
+(x=2000um,y=-3500um,z=200um,u=0.01deg,v=-0.05deg, w=0.002deg,sync=true)
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
 \textbf{Deviation:} Determine where the original pivot point is before
-sending a pivot command of (0, 0, 0)
+sending a pivot command of (0, 0, 0).\\
+Record any offset commands necessary to test before sending the move
+command.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The hexapod doesn't move.
+The hexapod moves to the commanded position
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Original pivot is 0, 0, -2.7584E+6
+\begin{verbatim}
+Starting Pivot point:
+\end{verbatim}
+
+\begin{verbatim}
+Pivot at (0, 0, -2758400) microns 
+\end{verbatim}
+
+\begin{verbatim}
+Starting point:
+
+INFO:Script:START- Camera Hexapod Integration Test -- LVV-T1600 Test Movw - Pivot test - Starting time: 2021-03-25 18:41:08.212398 UTC
+hex position
+      0.12       -0.62        0.03       -0.00        0.10       -0.00 
+ 
+\end{verbatim}
+
+After the move:
+
+\begin{verbatim}
+INFO:Script:START- Camera Hexapod Integration Test -- LVV-T1600 Test Step 29 - Pivot test - Starting time: 2021-03-25 18:59:39.581670 UTC
+\end{verbatim}
+
+\begin{verbatim}
+hex position
+   1999.57    -3500.69      200.14        0.01       -0.05        0.00  
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 25 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 38 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -2944,71 +3984,115 @@ In the enabled/stationary state, send a pivot command of (0,0,0).
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
-The actuator positions do not change but the hexapod position changes.
+The actuator positions do not change but the hexapod position changes to
+account for the new pivot point.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Position data became -408, -3952, 199, 0.0100 -0.05 0.002
+\begin{verbatim}
+INFO:Script:START- Camera Hexapod Integration Test -- LVV-T1600 Test Step 29 - Pivot set (0,0,0)- Starting time: 2021-03-25 18:59:39.581670 UTC
+\end{verbatim}
 
+\begin{verbatim}
+hex position
+   -407.51    -3982.08      199.05        0.01       -0.05        0.00  
+\end{verbatim}
+
+Pivot point changed.~
+
+Actuator position values changed in the EUI and in the EFD.~
+
+Changes are shown in Chronograph. ~
+
+Strut. Pos. Actual unchanged -- no movement
+
+Fail:\\
+The pivot point should be (0,0,0) now but it appears unchanged in the
+notebook and no event generated in the EFD.\\
+
+\begin{verbatim}
+pivot at (0, 0, -2758400) microns 
+\end{verbatim}
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29693}{DM-29693}~~Pivot changes are not reported in the EUI and the EFD.
+
+\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 26 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 39 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-In the enabled/stationary state, send a positionSet command of (2000um,
--3500um, 200um, 0.01deg, -0.05deg, 0.002deg)
+In the enabled/stationary state, send again the move command of
+(x=2000um, y=-3500um, z=200um, u=0.01deg, v=-0.05deg,
+w=0.002deg,sync=true)
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Test Data \\
  {\footnotesize
-Deviation: Record any offset commands necessary to test before sending
-the move command.\\
-\textbf{{Note: Need input from Te-Wei on whether there are certain
-offset commands to issue before sending the move command.}}
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Expected Result \\
-{\footnotesize
-The hexapod doesn't move.
-
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Actual Result \\
-{\footnotesize
-Does not move
-
-}
-\begin{tabular}{p{2cm}p{14cm}}
-\toprule
-Step 27 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
-\end{tabular}
- Description \\
-{\footnotesize
-Send a move command.
+\textbf{Deviation:} Record any offset commands necessary to test before
+sending the move command.\\[2\baselineskip]
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 Confirm the hexapod moves to the commanded position and the actuators
-change position to account for the new pivot point.
+change position to account for the new pivot point. Position values in
+the EFD appear different.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Moves to 2000, -3500, 200, 0.01, -0.05 0.002
+\begin{verbatim}
+Deviation: 
+\end{verbatim}
+
+The position changed in the GUI and the EFD to the set value. Strut Pos
+Actual values changed.~
+
+\begin{verbatim}
+INFO:Script:START- Camera Hexapod Integration Test -- LVV-T1600 move to (x=2000,y=-3500,z=200,u=0.01,v=-0.05,w=0.002,sync=True) again- Pivot test - Starting time: 2021-03-25 18:59:39.581670 UTC
+\end{verbatim}
+
+\begin{verbatim}
+hex position
+   2000.42    -3499.64      200.17        0.01       -0.05        0.00  
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 28 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 40 & Step Execution Status: \textbf{ Pass } \\ \hline
+\end{tabular}
+ Description \\
+{\footnotesize
+Wait 39s.
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Expected Result \\
+{\footnotesize
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Actual Result \\
+{\footnotesize
+
+}
+\begin{tabular}{p{2cm}p{14cm}}
+\toprule
+Step 41 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3021,6 +4105,14 @@ In enabled/stationary state, send a configureLimits command of (12000um,
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:} Skip complete test. This test uses an obsolete
+command. The configuration is now done before and should not be changed
+this state
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 The command is rejected for being outside acceptable limits.
@@ -3029,12 +4121,11 @@ The command is rejected for being outside acceptable limits.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command rejected for x being outside limits
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 29 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 42 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3051,12 +4142,11 @@ The command is accepted.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command Accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 30 & Step Execution Status: \textbf{ Fail } \\ \hline
+Step 43 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3073,20 +4163,11 @@ The command is rejected for being outside of range limits
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command is accepted. Jira ticket filed~
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Issues found executing this step:  \\
-{\footnotesize
-\begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}~~Check position limits for Hexapod move and offset commands
-
-\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 31 & Step Execution Status: \textbf{ Fail } \\ \hline
+Step 44 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3103,20 +4184,11 @@ The command is rejected for being outside of range limits.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command is accepted.
 
-}
-\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
-  Issues found executing this step:  \\
-{\footnotesize
-\begin{itemize}
-\item \href{https://jira.lsstcorp.org/browse/DM-23092}{DM-23092}~~Check position limits for Hexapod move and offset commands
-
-\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 32 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 45 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3133,12 +4205,11 @@ The command is accepted.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command accepted.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 33 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 46 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3154,12 +4225,11 @@ The previously accepted command is executed.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Move completed to correct position
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 34 & Step Execution Status: \textbf{ In Progress } \\ \hline
+Step 47 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3175,12 +4245,11 @@ The change is reflected in the settingsApplied event and the EUI.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Change reflected in EUI, still checking EFD.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 35 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 48 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3194,6 +4263,14 @@ positionSet command of (0um, 0um, 4900um, 0 deg, 0 deg, 0 deg, s).
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:} Skip complete test. This test uses an obsolete
+command. The configuration is now done before and should not be changed
+this state
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 The hexapod doesn't move.
@@ -3202,12 +4279,11 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-The Hexapod does not move
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 36 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 49 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3223,12 +4299,11 @@ The move takes approximately 9 seconds to complete.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Hexapod movement took approximately 9 seconds.~
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 37 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 50 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3244,12 +4319,11 @@ Send a configureAcceleration command of 1000.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command rejected
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 38 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 51 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3265,12 +4339,11 @@ The command is accepted.~
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 39 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 52 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3287,12 +4360,11 @@ The hexapod doesn't move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Hexapod does not move
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 40 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 53 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3309,12 +4381,11 @@ the reduced acceleration value.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Hexapod moved in approximately~ 13 seconds.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 41 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 54 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3331,12 +4402,11 @@ The command is accepted.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 42 & Step Execution Status: \textbf{ In Progress } \\ \hline
+Step 55 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3352,12 +4422,11 @@ The change is reflected in the settingsApplied event and the EUI.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Changes were evident in EUI, still need to find EFD.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 43 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 56 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3370,6 +4439,14 @@ configureVelocity command of (10000, .01, 100, .01).
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Test Data \\
+ {\footnotesize
+\textbf{Deviation:} Skip complete test. This test uses an obsolete
+command. The configuration is now done before and should not be changed
+this state
+
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Expected Result \\
 {\footnotesize
 This command is rejected for being outside of acceptable limits.
@@ -3378,12 +4455,11 @@ This command is rejected for being outside of acceptable limits.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command rejected
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 44 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 57 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3400,12 +4476,11 @@ This command is accepted.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 45 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 58 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3422,12 +4497,11 @@ The command is accepted
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 46 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 59 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3443,12 +4517,11 @@ It takes approximately 20 seconds to complete the commanded move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Approximately 20 seconds taken to move
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 47 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 60 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3465,12 +4538,11 @@ This command is accepted.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 48 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 61 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3487,12 +4559,11 @@ This command is accepted
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command accepted
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 49 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 62 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3508,12 +4579,11 @@ It takes approximately 40 seconds to complete the commanded move.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Move completed in 40 seconds
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 50 & Step Execution Status: \textbf{ In Progress } \\ \hline
+Step 63 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3529,12 +4599,11 @@ The change is reflected in the settingsApplied event and the EUI.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Changes reflected in EUI, still determining EFD
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 51 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 64 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3552,11 +4621,189 @@ There is no change and command is rejected.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{clearError}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+Rejected with:
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=185860430, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{configureAcceleration}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~obsolete}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{configureLimits}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~obsolete}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{configureVelocity}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~obsolete}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{move}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{Rejected with:}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1127617697, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{offset}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{\textbf{Rejected with:}}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1142026299, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')offset
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setCompensationMode}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{\textbf{\textbf{Rejected with:}}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1465750702, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not allowed in state=<State.OFFLINE: 4>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setPivot}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{\textbf{Rejected with:}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1661301044, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{stop}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{\textbf{\textbf{Rejected with:}}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=2041874605, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not enabled')stop
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\textbf{abort} & ~\tabularnewline
+\bottomrule
+\end{longtable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{\textbf{\textbf{\textbf{Rejected with:}}}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=37582136, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not supported by this CSC')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{disable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Accepted but not status change at the EUI:}\\
+
+\begin{verbatim}
+<coroutine object RemoteCommand.set_start at 0x7f95c928bbc0>
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}\\
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=723732711, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enterControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{Rejected with:}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=800082485, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{exitControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{\textbf{Rejected with:}}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=971118979, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{setAuthList}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~obsolete}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{setLogLevel}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~\textbf{\textbf{Accepted but not status change at the
+EUI.}}}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{setValue}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~obsolete}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{standby}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{Accepted but not status change at the EUI:}}\\
+
+\begin{verbatim}
+<coroutine object RemoteCommand.set_start at 0x7f95c92acd40>
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{start}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{\textbf{\textbf{Rejected with:}}}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1929235659, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Controller has CSC commands disabled; use the EUI to enable CSC commands')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{settingsToApply}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~obsolete}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+Summary: Some of the commands are accepted but the state machine is not
+changing at the EUI.\\
+The EUI does not allow to change the command source to DDS while in the
+PublishOnlyAvailable state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 52 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 65 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3572,12 +4819,12 @@ The system enters the Standby state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-System enters standby state
+System reached Standby state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 53 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 66 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3593,12 +4840,146 @@ There is no change and command is rejected.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command rejected
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{clearError}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+Rejected with:
+\end{verbatim}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=185860431, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.STANDBY: 5> instead of <State.FAULT: 3>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{move}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1127617698, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.STANDBY: 5> instead of <State.ENABLED: 2>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{offset}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1142026300, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.STANDBY: 5> instead of <State.ENABLED: 2>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setCompensationMode}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1465750703, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not allowed in state=<State.STANDBY: 5>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setPivot}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1661301045, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.STANDBY: 5> instead of <State.ENABLED: 2>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{stop}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=2041874606, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not enabled')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{abort}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=37582137, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not supported by this CSC')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{disable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Accepted but not status change at the EUI:}\\
+
+\begin{verbatim}
+<coroutine object RemoteCommand.set_start at 0x7f95c928bbc0>
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}\\
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=723732712, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.STANDBY: 5> instead of <State.DISABLED: 1>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enterControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=800082490, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.STANDBY: 5> instead of <State.OFFLINE: 4>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{exitControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~Not tested here. See another step.\\
+}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{setLogLevel}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~Accepted but not status change at the EUI.}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{standby}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Accepted but not status change at the EUI:}\\
+
+\begin{verbatim}
+<coroutine object RemoteCommand.set_start at 0x7f95c92acd40>
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{start}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~Not tested here. See another step.}\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Summary:} Some of the commands are accepted but the state
+machine is not changing at the EUI.\\[2\baselineskip]
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 54 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 67 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3614,12 +4995,12 @@ The system transitions into the Offline/Available state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Transitions to Offline/Available
+Yes, the system transitions into the Offline/Available state immediately
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 55 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 68 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3635,12 +5016,12 @@ The system transitions into the Disabled state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Transitions to disabled state
+Yes, the result is as expected.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 56 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 69 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3657,12 +5038,144 @@ There is no change and the command is rejected.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command rejected
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{clearError}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+Rejected with:
+\end{verbatim}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=185860432, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.FAULT: 3>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{move}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1127617699, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.ENABLED: 2>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{offset}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1142026301, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.ENABLED: 2>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setCompensationMode}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1465750704, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not allowed in state=<State.DISABLED: 1>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setPivot}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1661301046, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.ENABLED: 2>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{stop}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=2041874608, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not enabled')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{abort}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=37582138, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Not supported by this CSC')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{disable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Accepted but not status change at the EUI:}\\
+
+\begin{verbatim}
+<coroutine object RemoteCommand.set_start at 0x7f95c928bbc0>
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{enable}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~Not tested here. See another step.}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enterControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=800082491, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.OFFLINE: 4>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{exitControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+ Rejected with:
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=971118981, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.STANDBY: 5>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{setLogLevel}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~Accepted but not status change at the EUI.}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{standby}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~\textbf{~Not tested here. See another step.}}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{start}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{~Rejected with:}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1929235664, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.DISABLED: 1> instead of <State.STANDBY: 5>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Summary:} Some of the commands are accepted but the state
+machine is not changing at the EUI.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 57 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 70 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3678,12 +5191,25 @@ The system transitions into the Standby state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Transitions to standby state
+Failure:\\
+Command accepted but not status change at the EUI: \textless{}coroutine
+object RemoteCommand.set\_start at 0x7f95c92637c0\textgreater{}\\
+This is a failure here! State machine should have transitioned back to
+StandbyState while in DisabledState upon receiving the cmd\_standby
+command.
 
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29705}{DM-29705}~~Camera hexapod state machine does not transition back to StandbyState
+
+\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 58 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 71 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3699,12 +5225,12 @@ The system transitions into the Enabled/Stationary state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Transitions to enabled state
+System transitions corretly to Enabled/Stationary state.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 59 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 72 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3722,12 +5248,71 @@ There is no change and command is rejected.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Command rejected
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{clearError}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+Rejected with:
+\end{verbatim}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=185860433, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.ENABLED: 2> instead of <State.FAULT: 3>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{Rejected with:}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=723732714, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.ENABLED: 2> instead of <State.DISABLED: 1>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enterControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=800082492, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.ENABLED: 2> instead of <State.OFFLINE: 4>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{exitControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+ Rejected with:
+\end{verbatim}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=971118982, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.ENABLED: 2> instead of <State.STANDBY: 5>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{start}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{~Rejected with:}}
+
+\begin{verbatim}
+AckError: msg='Command failed', ackcmd=(ackcmd private_seqNum=1929235665, ack=<SalRetCode.CMD_FAILED: -302>, error=1, result='Failed: Rejected: initial state is <State.ENABLED: 2> instead of <State.STANDBY: 5>')
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Summary:}~
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 60 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 73 & Step Execution Status: \textbf{ Fail } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3743,12 +5328,24 @@ The system transitions into Disabled state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
-Transitioned to disabled state
+Failure:\\
+Command accepted but not status change at the EUI. This is a failure
+here!\\
+State machine should have transitioned back to DisabledState while in
+EndabledState upon receiving the cmd\_disable command.
 
+}
+\hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
+  Issues found executing this step:  \\
+{\footnotesize
+\begin{itemize}
+\item \href{https://jira.lsstcorp.org/browse/DM-29706}{DM-29706}~~Disable command accepted but state machine did not change status
+
+\end{itemize}
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 61 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 74 & Step Execution Status: \textbf{ Not Executed } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3764,11 +5361,134 @@ There is no change and command is rejected.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{clearError}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+Not tested here. See another step.
+\end{verbatim}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{move}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{offset}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setCompensationMode}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{setPivot}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{stop}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{abort}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{disable}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{Rejected with:}\\
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{enable}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~\textbf{Rejected with:}}\\[2\baselineskip]\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{enterControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~Rejected with:}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{exitControl}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\begin{verbatim}
+Â Rejected with:
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{setLogLevel}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~\textbf{Rejected with:}}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{standby}\strut
+\end{minipage} & \begin{minipage}[t]{0.47\columnwidth}\raggedright\strut
+\textbf{~\textbf{~\\
+}}\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{start}\strut
+\end{minipage} & \begin{minipage}[t]{0.48\columnwidth}\raggedright\strut
+\textbf{~\textbf{~Rejected with:}}
+
+\begin{verbatim}
+\end{verbatim}
+\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\textbf{Summary:} Some of the commands are accepted but the state
+machine is not changing at the EUI.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 62 & Step Execution Status: \textbf{ Initial Pass } \\ \hline
+Step 75 & Step Execution Status: \textbf{ Pass w/ Deviation } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3784,11 +5504,15 @@ The system transitions into the Offline/PublishOnly state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Yes, the FaultState can be cleared by sending a clearError command
+through the DDS if the fault condition does not exist
+anymore.\\[2\baselineskip]Deviation: The system transitions back to
+StandbyState and can be commanded from DDS again.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 63 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 76 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3807,11 +5531,17 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Yes, in the EFD topic
+``lsst.sal.MTHexapod.logevent\_controllerState.applicationStatus0'' the
+created the\\
+Code:29700
+ApplicationStatus.SIMULINK\_FAULT\textbar{}DRIVE\_FAULT\textbar{}DDS\_CONNECTED\textbar{}EUI\_CONNECTED
+at 04/16/2021 11:39:26
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 64 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 77 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3829,16 +5559,18 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+\begin{verbatim}
+Yes, in the EFD topic "lsst.sal.MTHexapod.logevent_controllerState.applicationStatus0" the created the Code:28676 ApplicationStatus.SIMULINK_FAULT|DRIVE_FAULT|DDS_CONNECTED|EUI_CONNECTED at 04/16/2021 11:56:32
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 65 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 78 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
-Unplug a motor power cable from one of the actuators and command a
-PositionSet/Move.
+Unplug a motor power cable from one of the actuators and command a Move.
 
 }
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
@@ -3851,11 +5583,15 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+\begin{verbatim}
+Yes, in the EFD topic "lsst.sal.MTHexapod.logevent_controllerState.applicationStatus0" the created the code 29701
+ApplicationStatus.SIMULINK_FAULT|DRIVE_FAULT|DDS_CONNECTED|DDS_COMMAND_SOURCE|EUI_CONNECTED|FOLLOWING_ERROR at 04/16/2021 12:17:41
+\end{verbatim}
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 66 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 79 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3873,11 +5609,14 @@ transitions into Fault state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+The limit switch were tested by Felipe Daurich as part of the
+reconfiguration of the limit switch. They all passed the test and
+created Fault state
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 67 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 80 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3895,11 +5634,12 @@ transitions into Fault state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+See previouse step.
 
 }
 \begin{tabular}{p{2cm}p{14cm}}
 \toprule
-Step 68 & Step Execution Status: \textbf{ Not Executed } \\ \hline
+Step 81 & Step Execution Status: \textbf{ Pass } \\ \hline
 \end{tabular}
  Description \\
 {\footnotesize
@@ -3917,6 +5657,13 @@ state.
 \hdashrule[0.5ex]{\textwidth}{1pt}{3mm}
   Actual Result \\
 {\footnotesize
+Yes, in the EFD topic
+``lsst.sal.MTHexapod.logevent\_controllerState.applicationStatus0'' the
+created the code 512
+
+\begin{verbatim}
+(ApplicationStatus.ETHERCAT_PROBLEM) at 04/16/2021 12:28:58
+\end{verbatim}
 
 }
 
