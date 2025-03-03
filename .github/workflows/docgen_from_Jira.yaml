@@ -28,8 +28,8 @@ jobs:
         env:
           JIRA_USER: ${{ secrets.JIRA_USER }}
           JIRA_PASSWORD: ${{ secrets.JIRA_PASSWORD }}
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
         run: |
-          source ${CONDA}/bin/activate docsteady-env
           docsteady --namespace PSE generate-tpr LVV-P63 SCTR-14.tex
           echo `ls -la SCTR-14.tex`
         shell: bash
